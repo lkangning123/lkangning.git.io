@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="dns-prefetch" href="http://member-ssl.vipstatic.com">
+    <title>唯品会网站注册</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/reglog.css">
+    <link rel="stylesheet" href="./css/register.css">
+
+    <script src="./lib/jquery1.12.4.min.js"></script>
+    <script src="./js/register.js"></script>
+</head>
+
+<body>
+    <!-- 头部部分 -->
+    <div id="header">
+        <div class="header-inner container">
+            <div class="logo">
+                <a class="logo-link" href="https://www.vip.com/">唯品会</a>
+            </div>
+            <div class="header-service"></div>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="body-bg">
+        <div class="content-inner container">
+            <div class="content">
+                <div class="title">
+                    <div class="title_l">
+                        <h3>会员注册</h3>
+                    </div>
+                    <div class="title_r">
+                        <p>已注册可<a href="./login.html">直接登录</a></p>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <form action="">
+                        <div class="control-group">
+                            <div class="form-group">
+                                <input id="" class="input-group input-phone" type="text" placeholder="请输入手机号码">
+                                <span class="warning iconfont phone-warn">&#59226;</span>
+                                <span class="success iconfont phone-success">&#59022;</span>
+                                <span class="icon icon-mobile"></span>
+                            </div>
+                            <div class="form-tip">
+                                <span class="phone-tip"></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <div class="input-code">
+                                    <input id="" class="input-group inp-code" type="text" placeholder="请输入验证码">
+                                    <a id='code' class="code disable secondary">获取验证码</a>
+                                    <span class="warning iconfont code-warn">&#59226;</span>
+                                    <span class="success iconfont code-success">&#59022;</span>
+                                    <span class="icon icon-code"></span>
+                                </div>
+
+                            </div>
+                            <div class="form-tip">
+                                <span class="code-tip"></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <input class="input-group input-password" maxlength="20" type="password" placeholder="密码由8-20s位字母，数字和符号组合">
+                                <span class="warning iconfont pw-warn">&#59226;</span>
+                                <span class="success iconfont pw-success">&#59022;</span>
+                                <span class="icon icon-password"></span>
+                            </div>
+                            <div class="form-tip">
+                                <span class="strength">
+                                    <span class="strength-item-bg">
+                                        <span class="strength-item"></span>
+                                    </span>
+                                    <span class="strength-text text-weak">弱</span>
+                                    <span class="strength-text text-medium">中</span>
+                                    <span class="strength-text text-strong">强</span>
+                                </span>
+                                <span class="password-tip"></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <input class="input-group repassword" type="password" placeholder="请再次输入上面的密码">
+                                <span class="warning iconfont repw-warn">&#59226;</span>
+                                <span class="success iconfont repw-success">&#59022;</span>
+                                <span class="icon icon-password"></span>
+                            </div>
+                            <div class="form-tip">
+                                <span class="repassword-tip"></span>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="form-group">
+                                <span class="ui-checkbox">
+                                    <input type="checkbox" id="J_mobile_agree" name="agree" class="ui-checkbox-normal"
+                                        value="1">
+                                    <label for="J_mobile_agree" class="ui-checkbox-bg"></label>
+                                </span>
+                                <label for="J_mobile_agree" class="u-provision-txt">我已阅读并接受以下条款：
+                                    <a href="https://viva.vip.com/act/supportClause-pc?wapid=vivac_802" class="u-link"
+                                        target="_blank" id="J_mobile_provision">《唯品会服务条款》
+                                    </a>
+                                    <a href="https://viva.vip.com/act/supportPrivacy-pc?wapid=vivac_804" class="u-link"
+                                        target="_blank">《隐私条款》
+                                    </a>
+                                    <a href="https://i.vpal.com/clause.html" class="u-link" target="_blank">《唯品支付用户服务协议》
+                                    </a>
+                                </label>
+                                <div class="form-tip">
+                                    <span class="check-tip"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="control-group mb">
+                            <input type="button" value="立即注册" class="btn-large">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- 底部部分 -->
+        <div class="footer">
+            <p class="copyright">Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+        </div>
+</body>
+
+</html>

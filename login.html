@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯品会网站登录</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/reglog.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <script src="./lib/jquery1.12.4.min.js"></script>
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+    <!-- 头部部分 -->
+    <div id="header">
+        <div class="header-inner container">
+            <div class="logo">
+                <a class="logo-link" href="https://www.vip.com/">唯品会</a>
+            </div>
+            <div class="header-service"></div>
+        </div>
+    </div>
+    <!-- 主体内容 -->
+    <div class="body-bg">
+        <div class="content-inner container">
+            <div class="content">
+                <div class="title">
+                    <div class="title-item title_l">扫码登录</div>
+                    <div class="title-item title_r">账户登录</div>
+                </div>
+                <div class="content-body">
+                    <div class="tab-panel">
+                        <div class="tab-panel-qr active">
+                            <div class="tab-qr-row">
+                                <div class="qr-img-wrapper clearfix">
+                                    <img src="https://passport.vip.com/qrLogin/getQrImage?qrToken=10000-afc1960399f34d5eb038fb049468dddf"
+                                        class="qr-img" width="150" height="150" alt="登录二维码">
+                                </div>
+                            </div>
+                            <div class="qr-guide-text">
+                                <span class="iconfont scan">&#xe61c;</span>打开<span
+                                    class="u-text">唯品会APP-个人中心</span>，扫一扫登录
+                            </div>
+                        </div>
+                        <div class="tab-panel-form">
+                            <form action="">
+                                <div class="form-group">
+                                    <input id="phone" class="input-group input-phone" type="text" placeholder="手机号/用户名/邮箱">
+                                    <span class="warning iconfont phone-warn">&#59226;</span>
+                                    <span class="success iconfont phone-success">&#59022;</span>
+                                    <span class="icon icon-mobile"></span>
+                                </div>
+                                <div class="form-tip">
+                                    <span class="phone-tip"></span>
+                                </div>
+                                <div class="form-group">
+                                    <input id="password" class="input-group input-password" maxlength="20" type="password"
+                                        placeholder="密码">
+                                    <span class="warning iconfont pw-warn">&#59226;</span>
+                                    <span class="success iconfont pw-success">&#59022;</span>
+                                    <span class="icon icon-password"></span>
+                                </div>
+                                <div class="form-tip">
+                                    <span class="password-tip"></span>
+                                </div>
+                                <div class="form-item">
+                                    <div class="form-item-l">
+                                        <a href="javascript:;">短信验证登录</a>
+                                    </div>
+                                    <div class="form-item-r">
+                                        <a href="javascript:;">忘记密码</a>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <input id="button" type="button" value="登录" class="btn-large">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-panel-footer">
+                            <div class="tab-panel-third">
+                                <div class="tab-third-special">
+                                    <div class="third-wechat-wrapper">
+                                        <a class="third-wechat" href="http://passport.vip.com/login/weixin"
+                                            target="_blank">
+                                            <span class="third-wechat-icon"></span>
+                                            <span class="third-wechat-text">微信</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="f-right">
+                                    <a class="register-link" target="_blank" href="./register.html">免费注册</a>
+                                </div>
+                                <div class="tab-third-main">
+                                    <ul class="tab-third-main-list">
+                                        <li class="tab-third-main-item">
+                                            <a class="tab-third-link tab-third-item-disabled" href="javascript:;"
+                                                target="_blank">新浪微博</a>
+                                        </li>
+                                        <li class="tab-third-main-item">
+                                            <a class="tab-third-link  " href="https://passport.vip.com/login/qq"
+                                                target="_blank">QQ</a>
+                                        </li>
+                                        <li class="tab-third-main-item">
+                                            <a class="tab-third-link" href="https://passport.vip.com/login/alipay"
+                                                target="_blank">支付宝</a>
+                                        </li>
+                                    </ul>
+                                    <a href="###" role="button" class="tab-third-more-button">
+                                        <span class="tab-third-more-expand active">更多<span
+                                                class="vipFont iconfont">&#xe733;</span></span>
+                                        <span class="tab-third-more-expand">收起<span
+                                                class="vipFont iconfont">&#xe734;</span></span>
+                                    </a>
+                                </div>
+                                <div class="tab-third-more">
+                                    <ul class="tab-third-other-list">
+                                        <li class="tab-third-other-item">
+                                            <a href="javascript:;" target="_blank"
+                                                class="tab-third-link tab-third-item-disabled">网&nbsp;&nbsp;易</a>
+                                        </li>
+                                        <li class="tab-third-other-item">
+                                            <a href="https://passport.vip.com/login/renren" target="_blank"
+                                                class="tab-third-link">&nbsp;人人网&nbsp;</a>
+                                        </li>
+                                        <li class="tab-third-other-item">
+                                            <a href="javascript:;" target="_blank"
+                                                class="tab-third-link tab-third-item-disabled">开心网</a>
+                                        </li>
+                                        <li class="tab-third-other-item">
+                                            <a href="https://passport.vip.com/login/bestpay" target="_blank"
+                                                class="tab-third-link">翼支付</a>
+                                        </li>
+                                    </ul>
+                                    <p class="tab-third-offline-notice">
+                                        <a href="https://passport.vip.com/notice/common/third_bottom_tips"
+                                            target="_blank">关于建行、中国移动登录失效通知，请查看</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部部分 -->
+    <div class="footer">
+        <p class="copyright">Copyright 2008-2020 vip.com，All Rights Reserved ICP证：粤 B2-20080329</p>
+    </div>
+</body>
+
+</html>

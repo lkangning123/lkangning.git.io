@@ -1,0 +1,2433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>唯品会（原Vipshop.com）特卖会：品牌特卖_确保正品_确保低价_货到付款</title>
+    <meta name="keywords" content="唯品会,vip,打折,品牌折扣,限时抢购,特卖" />
+    <meta name="description" content="唯品会vip购物网以1-7折超低折扣对全球各大品牌进行限时特卖，商品囊括服装、化妆品、家居、奢侈品等上千品牌。100%正品、低价、货到付款、7天无理由退货。" />
+    <meta name="baidu-site-verification" content="rnyMiv2JC1" />
+    <meta name="mars_root" content="01">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./lib/jquery1.12.4.min.js"></script>
+    <script src="./lib/swiper.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header id="vip-common-header" class="header">
+        <nav class="top-nav">
+            <div id="J-top-nav" class="head-inner">
+                <!-- 点击c-h-area添加h-area-expanded类名，显示h-area-body -->
+                <div id="header_address_container" class="c-h-area h-area-expanded">
+                    <div class="h-area-header">
+                        <div class="h-area-title">深圳市</div>
+                        <!-- 点击h-area-triangle隐藏h-area-body -->
+                        <div class="h-area-triangle"></div>
+                    </div>
+                    <div class="h-area-body f-hide" id="header_area_content">
+                        <p class="h-area-explain">请选择你所在的收货地址</p>
+                        <div class="h-area-tab">
+                            <div class="h-area-tab-header">
+                                <ul class="h-area-tab-title">
+                                    <!-- 点击li给该li添加h-area-tab-title-item-current类名 -->
+                                    <li id="header_tab_province"
+                                        class="header_address_tab h-area-tab-title-item h-area-tab-title-item-current"
+                                        data-flag="province">省份</li>
+                                    <li id="header_tab_city" class="header_address_tab h-area-tab-title-item"
+                                        data-flag="city">城市</li>
+                                    <li id="header_tab_country" class="header_address_tab h-area-tab-title-item f-hide"
+                                        data-flag="country">县区</li>
+                                    <li id="header_tab_street" class="header_address_tab h-area-tab-title-item f-hide"
+                                        data-flag="country">街道</li>
+                                </ul>
+                            </div>
+                            <div class="h-area-tab-body">
+                                <ul id="header_province_contanier" class="h-area-list h-area-list-province">
+                                    <!-- h-area-item-current是当前选中项 -->
+                                    <li class="h-area-item header_select_item101101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="北京市"
+                                            data-type="0" data-id="101101" data-name="北京市">北京市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="天津市"
+                                            data-type="0" data-id="101102" data-name="天津市">天津市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="河北省"
+                                            data-type="0" data-id="101103" data-name="河北省">河北省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="山西省"
+                                            data-type="0" data-id="101104" data-name="山西省">山西省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="内蒙古自治区"
+                                            data-type="0" data-id="101105" data-name="内蒙古自治区">内蒙古自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item102101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="辽宁省"
+                                            data-type="0" data-id="102101" data-name="辽宁省">辽宁省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item102102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="吉林省"
+                                            data-type="0" data-id="102102" data-name="吉林省">吉林省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item102103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="黑龙江省"
+                                            data-type="0" data-id="102103" data-name="黑龙江省">黑龙江省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="上海市"
+                                            data-type="0" data-id="103101" data-name="上海市">上海市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="江苏省"
+                                            data-type="0" data-id="103102" data-name="江苏省">江苏省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="浙江省"
+                                            data-type="0" data-id="103103" data-name="浙江省">浙江省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="安徽省"
+                                            data-type="0" data-id="103104" data-name="安徽省">安徽省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="福建省"
+                                            data-type="0" data-id="103105" data-name="福建省">福建省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103106">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="江西省"
+                                            data-type="0" data-id="103106" data-name="江西省">江西省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103107">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="山东省"
+                                            data-type="0" data-id="103107" data-name="山东省">山东省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="河南省"
+                                            data-type="0" data-id="104101" data-name="河南省">河南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="湖北省"
+                                            data-type="0" data-id="104102" data-name="湖北省">湖北省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="湖南省"
+                                            data-type="0" data-id="104103" data-name="湖南省">湖南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104104 h-area-item-current">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="广东省"
+                                            data-type="0" data-id="104104" data-name="广东省">广东省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="广西壮族自治区"
+                                            data-type="0" data-id="104105" data-name="广西壮族自治区">广西壮族自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104106">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="海南省"
+                                            data-type="0" data-id="104106" data-name="海南省">海南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105100">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="重庆市"
+                                            data-type="0" data-id="105100" data-name="重庆市">重庆市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="四川省"
+                                            data-type="0" data-id="105101" data-name="四川省">四川省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="贵州省"
+                                            data-type="0" data-id="105102" data-name="贵州省">贵州省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="云南省"
+                                            data-type="0" data-id="105103" data-name="云南省">云南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="西藏自治区"
+                                            data-type="0" data-id="105104" data-name="西藏自治区">西藏自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="陕西省"
+                                            data-type="0" data-id="106101" data-name="陕西省">陕西省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="甘肃省"
+                                            data-type="0" data-id="106102" data-name="甘肃省">甘肃省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="青海省"
+                                            data-type="0" data-id="106103" data-name="青海省">青海省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="宁夏回族自治区"
+                                            data-type="0" data-id="106104" data-name="宁夏回族自治区">宁夏回族自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="新疆维吾尔自治区"
+                                            data-type="0" data-id="106105" data-name="新疆维吾尔自治区">新疆维吾尔自治区</a>
+                                    </li>
+                                </ul>
+                                <ul id="hrader_city_container" class="h-area-list h-area-list-city"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="top-nav-tool" id="topNavTool">
+                    <li class="mp-my">
+                        <ul id="head_log" class="login-before user-no-cookies">
+                            <li class="wp-user">
+                                <a href="./login.html">请登录</a>
+                            </li>
+                            <li class="register-user">
+                                <a href="./register.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="wp-sign">
+                        <a href="javasctipt:;">
+                            <i class="wp-sign-icon"></i>
+                            <span>签到有礼</span>
+                        </a>
+                    </li>
+                    <li class="wp-order">
+                        <a href="javascript:;">我的订单</a>
+                    </li>
+                    <li class="wp-service">
+                        <span class="service-in">
+                            <a href="javascript:;">我的特卖</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <p class="top-nav-list">
+                                <span>
+                                    <a href="javascript:;">商品收藏</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">品牌收藏</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">我的足迹</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-service">
+                        <span class="service-in">
+                            <a href="javascript:;">会员俱乐部</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <p class="top-nav-list">
+                                <span>
+                                    <a href="javascript:;">俱乐部首页</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">唯品币兑换</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-service">
+                        <span class="service-in">
+                            <a href="javascript:;">客户服务</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <p class="top-nav-list">
+                                <span>
+                                    <a href="javascript:;">联系客服</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">帮助中心</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">服务中心</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">知识产权投诉</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-phone">
+                        <span class="phone-in">
+                            <i class="ico-mob"></i>
+                            <a href="javascript:;">手机版</a>
+                        </span>
+                        <div class="top-nav-dis phone-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <div class="tc">
+                                <a href="javascript:;">
+                                    <img src="https://b.appsimg.com/2016/06/17/863/1466134037230.jpg" alt="二维码"
+                                        width="161" height="161" class="qrcode_img">
+                                </a>
+                            </div>
+                            <p class="top-nav-list">
+                                <a href="javascript:;">随时逛 及时抢</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-business">
+                        <span class="service-in">
+                            <a href="javascript:;">更多</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor-more">
+                            <i class="ico-arw-bodder"></i>
+                            <h5 class="service-more-hd clearfix">合作专区</h5>
+                            <p class="top-nav-list clearfix">
+                                <a href="javascript:;">唯品卡</a>
+                            </p>
+                            <h5 class="service-more-hd clearfix service-more-hd2">关于我们</h5>
+                            <p class="top-nav-list clearfix service-more-p">
+                                <a href="javascript:;">Sell on vip</a>
+                                <a href="javascript:;//viva.vip.com/act/supportInvestment-pc?wapid=vivac_812">品牌招商</a>
+                                <a href="javascript:;">官方博客</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="head-log">
+            <div class="head-inner clearfix">
+                <div class="head-cart head-bag-car">
+                    <div class="tool">
+                        <a href="./cart.html">
+                            <span class="ico-bag"></span>
+                            <span class="mycartext-default">购物袋</span>
+                            <span class="mycarttext-countdown cart_countDowncart"></span>
+                            <span class="counti-cons-bg">
+                                <span id="skuCount">0</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="c-search c-category-search">
+                    <div class="c-search-form">
+                        <input type="text" class="c-search-input search-input" placeholder="女靴" autocomplete="off"
+                            max-length="100">
+                        <a href="javascript:;" class="c-search-button search-button">
+                            <span class="c-search-icon"></span>
+                        </a>
+                    </div>
+                    <div class="search-hotwords-content">
+                        <ul class="c-search-hotwords-list search-hotwords-list">
+                            <li>
+                                <a href="javascript:;">女靴</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">护肤套装</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">女式大衣</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">女式羽绒服</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">波司登BOSIDENG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-logo">
+                    <div class="header-logo-dop">
+                        <a href="javascript:;">
+                            <img src="https://b.appsimg.com/upload/momin/2020/06/16/82/1592278113502.png" alt="品牌特卖"
+                                height="100">
+                        </a>
+                    </div>
+                </div>
+                <div class="c-service header-vip">
+                    <a href="javascript:;" class="c-service-link"></a>
+                    <a href="javascript:;" class="c-service-link"></a>
+                    <a href="javascript:;" class="c-service-link"></a>
+                    <img class="c-service-img" src="https://b.appsimg.com/upload/momin/2020/04/16/150/1587017895494.jpg"
+                        width="304" height="100">
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="main-nav nav-cate-data">
+                <div class="head-inner">
+                    <ul class="main-nav-link clearfix">
+                        <li class="nav-category">
+                            <a href="javascript:;" class="main-nav-atag">
+                                <img src="https://b.appsimg.com/upload/momin/2018/09/10/150/1536548648745.png"
+                                    class="link-front-icon">
+                                商品分类
+                            </a>
+                            <div class="nav-category-data">
+                                <ul class="cate-menu">
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">女装/男装/内衣</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">女鞋/男鞋/箱包</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">护肤彩妆/个护</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">运动户外</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">家电数码</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">母婴童装</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">手表配饰</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">居家用品</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">唯品生活</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">唯品国际/唯品奢</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">医药健康</span>
+                                    </li>
+                                </ul>
+                                <div class="tate-pop">
+                                    <div class="nav-cate-data-loading"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="main-nav-atag nav_current">首页</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">3折疯抢</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">唯品快枪</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">唯品奥莱</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">品牌清仓</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">女装</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">母婴</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">家电</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">美妆</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">鞋包</a>
+                        </li>
+
+                        <li class="more-wrap">
+                            <a href="" class="main-nav-atag">更多
+                                <i class="vipFont iconfont">&#xe733;</i>
+                            </a>
+                            <div class="channel-item-group">
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;">男装</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;v" class="channel-more-itemlink">运动</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">家居</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">生活</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">配饰</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">扶贫</a>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="index-content">
+        <!-- 轮播图 -->
+        <div class="foucs-banner">
+            <div class="foucs-banner-wrq">
+                <div class="swiper-container container banner-img">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="https://b.appsimg.com/upload/momin/2020/12/31/10/1609400698265.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://b.appsimg.com/upload/momin/2021/01/04/184/1609742350993.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 导航按钮 -->
+                    <div class="swiper-button-prev banner-button button-left"></div>
+                    <div class="swiper-button-next banner-button button-right"></div>
+                </div>
+                <!-- 分页器 -->
+                <div class="fbc-trigger container">
+                    <ul class="fbc-trigger-con" id="J_slideBanner_btns">
+                        <li class="selected">MO&amp;Co.低至1.8折</li>
+                        <li class="">巴拉巴拉低至1.8折</li>
+                    </ul>
+                    <div class="swiper-pagination banner-icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-operate container">
+            <div class="hot-sale-operation">
+                <div class="hot-sale-title">
+                    <img src="https://a.vpimg2.com/upload/flow/2018/08/17/154/15344789862278.jpg">
+                </div>
+                <div class="lightart-wrap-box">
+                    <div class="lightart-box-left">
+                        <div class="ltart-clkable">
+                            <img class="ltart-clkable-pointer ltart-clkable-bg"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/12/14/109/1607914916335_1020x580_90.png"
+                                style="z-index: 1;left: 0px; width: 510px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img1 ltart-clkable-img"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2020/07/16/41/8792b4b3-38d0-4e11-84a5-e80fcf90fc3d_420_531_294x372_90.jpg"
+                                style="z-index: 2;left: 18px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img2"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/02/120/1599039024891_210x128_90.png"
+                                style="z-index: 3;left: 39px;top: 174px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img3"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/0af650a353d44cc5942aeded48f1dc6a/10006810/primary_132x66_90.png"
+                                style="z-index: 4;left: 58px;top: 180px;">
+                            <span class="ltart-flex-v ltart-clkable-img" style="z-index: 5;
+                            left: 40px;">
+                                <span>共1472款</span>
+                            </span>
+                            <img class="ltart-clkable-pointer ltart-flex-img4 ltart-clkable-img"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/143/1599208735987_100x38_90.png"
+                                style="z-index: 6;left: 40px;">
+                            <span class="ltart-flex-img4 ltart-clkable-img" style="z-index: 7;left: 92px;">
+                                <span class="ltart-label-inner ltart-label-text">¥198</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 8; left: 48px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img1"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvop/00603480/10026338/1153667197-1300491190801039360-1300491190801043463-50_420_531_294x372_90.jpg"
+                                style="z-index: 10;left: 172px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img2"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/02/120/1599039024891_210x128_90.png"
+                                style="z-index: 11;left: 193px;top: 174px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img3"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/b4331f2ad75c4046bb6cc94077360984/10026338/primary_132x66_90.png"
+                                style="z-index: 12;left: 212px;top: 180px;">
+                            <span class="ltart-flex-v ltart-clkable-img" style="z-index: 13;
+                            left: 194px;">
+                                <span>共1553款</span>
+                            </span>
+                            <img class="ltart-clkable-pointer ltart-flex-img4 ltart-clkable-img"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/143/1599208735987_100x38_90.png"
+                                style="z-index: 14;left: 194px;">
+                            <span class="ltart-flex-img4 ltart-clkable-img" style="z-index: 15;left: 246px;">
+                                <span class="ltart-label-inner ltart-label-text">¥299</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 16; left: 202px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img1"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/619043/2020/1109/11/964e1fb7-6db3-4c8e-8658-4f25631b55ca_420_531_294x372_90.jpg"
+                                style="z-index: 17;left: 326px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img2"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/02/120/1599039024891_210x128_90.png"
+                                style="z-index: 18;left: 347px;top: 174px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img3"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/b4331f2ad75c4046bb6cc94077360984/10026338/primary_132x66_90.png"
+                                style="z-index: 19;left: 366px;top: 180px;">
+                            <span class="ltart-flex-v ltart-clkable-img" style="z-index: 20;
+                            left: 348px;">
+                                <span>共1386款</span>
+                            </span>
+                            <img class="ltart-clkable-pointer ltart-flex-img4 ltart-clkable-img"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/143/1599208735987_100x38_90.png"
+                                style="z-index: 21;left: 348px;">
+                            <span class="ltart-flex-img4 ltart-clkable-img" style="z-index: 22;left: 400px;">
+                                <span class="ltart-label-inner ltart-label-text">¥98</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 23; left: 356px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lightart-box-right">
+                        <div class="ltart-clkable">
+                            <img class="ltart-clkable-pointer ltart-clkable-bg"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2021/01/05/194/1609815311067_980x580_90.png"
+                                style="z-index: 2; left: 0px;width: 490px;">
+                            <img class="ltart-clkable-img ltart-clkable-img0 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/03/144/1599118620572_292x426_90.jpg"
+                                style="z-index: 3; left: 18px;">
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2019/10/29/71/ffef10d4-2c69-43e2-ac6e-e9e5c3b4f14b_420_531_292x372_90.jpg"
+                                style="z-index: 4; left: 18px; width: 146px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img2"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/03/192/1599118711742_208x38_90.png"
+                                style="z-index: 5; left: 40px;">
+                            <span class="ltart-clkable-pointer ltart-clkable-img ltart-flex-v"
+                                style="z-index: 6; left: 30px; ">
+                                <span class="ltart-label-inner">女式外套</span>
+                            </span>
+                            <img class="ltart-clkable-img ltart-clkable-img0 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/03/144/1599118620572_292x426_90.jpg"
+                                style="z-index: 7; left: 172px;">
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/612109/2020/0913/177/34ce1876-1e3a-4e91-bd9a-58b3c1fa3df3_420_531_292x372_90.jpg"
+                                style="z-index: 8; left: 172px;width: 146px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img2"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/03/192/1599118711742_208x38_90.png"
+                                style="z-index: 9; left: 194px;">
+                            <span class="ltart-clkable-pointer ltart-clkable-img ltart-flex-v"
+                                style="z-index: 10; left: 184px;">
+                                <span class="ltart-label-inner">女式卫衣</span>
+                            </span>
+                            <img class="ltart-clkable-img ltart-clkable-img0 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/03/144/1599118620572_292x426_90.jpg"
+                                style="z-index: 11; left: 326px;">
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/612109/2020/1001/5/a045090b-de27-4767-ad73-82d467f062fc_420_531_292x372_90.jpg"
+                                style="z-index: 12; left: 326px;width: 146px;">
+                            <img class="ltart-clkable-pointer ltart-clkable-img ltart-clkable-img2"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/03/192/1599118711742_208x38_90.png"
+                                style="z-index: 13; left: 348px;">
+                            <span class="ltart-clkable-pointer ltart-clkable-img ltart-flex-v"
+                                style="z-index: 14; left: 338px;">
+                                <span class="ltart-label-inner">女式毛衣</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="lightart-box-bottom">
+                        <div class="ltart-clkable">
+                            <img class="ltart-clkable-pointer ltart-clkable-bg"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/18/152/1600421099298_2000x596_90.png"
+                                style="z-index: 1; left: 0px; top: 0px;width: 1000px;height: 298px; object-fit: cover;">
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcpos/1100002418/2021/0104/198/6e75a7e1-b56e-4c01-a081-c9c2cfb1e82b_290x290_90.jpg"
+                                style="z-index: 2; left: 20px;">
+                            <img class="ltart-clkable-img ltart-clkable-img2 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/112/1599186246637_172x104_90.png"
+                                style="z-index: 3; left: 50px;">
+                            <img class="ltart-clkable-img ltart-clkable-img3 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/a45d0c4aa16b4a8993093de6ef775c87/10012277/primary_136x70_90.png"
+                                style="z-index: 4; left: 58px;">
+                            <img class="ltart-clkable-img ltart-clkable-img4 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/82/1599207921075_80x30_90.png"
+                                style="z-index: 5; left: 50px;">
+                            <span class="ltart-clkable-img4 ltart-clkable-img" style="z-index: 6; left: 95px;">
+                                <span class="ltart-label-inner ltart-label-text">¥21</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 7; left: 49px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/999999999/2020/1118/17/b1d6c1bc-5f89-4f34-a7ad-18216159a7c2_290x290_90.jpg"
+                                style="z-index: 9; left: 183px;">
+                            <img class="ltart-clkable-img ltart-clkable-img2 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/112/1599186246637_172x104_90.png"
+                                style="z-index: 10; left: 213px;">
+                            <img class="ltart-clkable-img ltart-clkable-img3 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/23000ae1e7b7408f8b4ba79f51083cd0/10028387/primary_136x70_90.png"
+                                style="z-index: 11; left: 222px;">
+                            <img class="ltart-clkable-img ltart-clkable-img4 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/82/1599207921075_80x30_90.png"
+                                style="z-index: 12; left: 212px;">
+                            <span class="ltart-clkable-img4 ltart-clkable-img" style="z-index: 13; left: 258px;">
+                                <span class="ltart-label-inner ltart-label-text">¥565</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 14; left: 212px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/630708/2020/0922/127/1eb2a8be-57d6-4031-950c-0fe67fc253b2_290x290_90.jpg"
+                                style="z-index: 15; left: 346px;">
+                            <img class="ltart-clkable-img ltart-clkable-img2 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/112/1599186246637_172x104_90.png"
+                                style="z-index: 16; left: 376px;">
+                            <img class="ltart-clkable-img ltart-clkable-img3 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/158734886629903013/primary_136x70_90.png"
+                                style="z-index: 17; left: 385px;">
+                            <img class="ltart-clkable-img ltart-clkable-img4 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/82/1599207921075_80x30_90.png"
+                                style="z-index: 18; left: 375px;">
+                            <span class="ltart-clkable-img4 ltart-clkable-img" style="z-index: 19; left: 421px;">
+                                <span class="ltart-label-inner ltart-label-text">¥59</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 20; left: 375px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2020/12/17/28/2cb46d0d-eb54-4591-8370-ff88aa8a5fb7_290x290_90.jpg"
+                                style="z-index: 21; left: 509px;">
+                            <img class="ltart-clkable-img ltart-clkable-img2 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/112/1599186246637_172x104_90.png"
+                                style="z-index: 22; left: 539px;">
+                            <img class="ltart-clkable-img ltart-clkable-img3 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/add98744311b42db925668d61fe4d819/10022523/primary_136x70_90.png"
+                                style="z-index: 23; left: 548px;">
+                            <img class="ltart-clkable-img ltart-clkable-img4 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/82/1599207921075_80x30_90.png"
+                                style="z-index: 24; left: 538px;">
+                            <span class="ltart-clkable-img4 ltart-clkable-img" style="z-index: 25; left: 584px;">
+                                <span class="ltart-label-inner ltart-label-text">¥1336</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 26; left: 538px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/611363/2020/1119/159/58146fdd-f512-4020-a80b-d0e090c35f52_290x290_90.jpg"
+                                style="z-index: 27; left: 672px;">
+                            <img class="ltart-clkable-img ltart-clkable-img2 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/112/1599186246637_172x104_90.png"
+                                style="z-index: 28; left: 702px;">
+                            <img class="ltart-clkable-img ltart-clkable-img3 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/3a591f93c1454ed08a9cc1fce62da3dc/10014021/primary_136x70_90.png"
+                                style="z-index: 29; left: 711px;">
+                            <img class="ltart-clkable-img ltart-clkable-img4 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/82/1599207921075_80x30_90.png"
+                                style="z-index: 30; left: 701px;">
+                            <span class="ltart-clkable-img4 ltart-clkable-img" style="z-index: 31; left: 747px;">
+                                <span class="ltart-label-inner ltart-label-text">¥59</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 32; left: 701px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+
+                            <img class="ltart-clkable-img ltart-clkable-img1 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/106208/2021/0104/181/c6be74fd-1248-4226-82c1-22058b7e1e5e_290x290_90.jpg"
+                                style="z-index: 33; left: 835px;">
+                            <img class="ltart-clkable-img ltart-clkable-img2 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/112/1599186246637_172x104_90.png"
+                                style="z-index: 34; left: 865px;">
+                            <img class="ltart-clkable-img ltart-clkable-img3 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/a.appsimg.com/upload/brandcool/0/6e73c353b67049a79a846badee8666de/10001144/primary_136x70_90.png"
+                                style="z-index: 35; left: 874px;">
+                            <img class="ltart-clkable-img ltart-clkable-img4 ltart-clkable-pointer"
+                                src="https://h2.appsimg.com/b.appsimg.com/upload/momin/2020/09/04/82/1599207921075_80x30_90.png"
+                                style="z-index: 36; left: 864px;">
+                            <span class="ltart-clkable-img4 ltart-clkable-img" style="z-index: 37; left: 910px;">
+                                <span class="ltart-label-inner ltart-label-text">¥79</span>
+                            </span>
+                            <span class="ltart-label ltart-clkable-img" style="z-index: 38; left: 864px;">
+                                <span class="ltart-label-inner">特卖价</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="today-new shop-sort" id="shop-sort">
+                <div class="shop-title ">
+                    <img class="coundown-img" alt="开售标题" src="https://a.vpimg2.com/upload/dop/2019/05/23/85/clock1.png">
+                    <div class="shop-coundown-cont">
+                        <span class="coundown-hour" id="countDown_hour"></span>
+                        <span class="coundown-min" id="countDown_min"></span>
+                        <span class="coundown-sec" id="countDown_sec"></span>
+                        <span class="countdown-s"></span>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap" id="lady">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg3.com/upload/dop/2016/03/17/121/woman_2ad.png" alt="女装">
+                        <a class="shop-all-btn" href="javascript:;">全部女装品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/30/38/ias_160932064189496_570x273_90.jpg"
+                                        class="brand-img" alt="今典CLASSICS STORY皮草男女装-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">今典CLASSICS STORY皮草男女装-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/196/ias_160939505062433_570x273_90.jpg"
+                                        class="brand-img" alt="紫澜门女装-大牌疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">紫澜门女装-大牌疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.8</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/23/50/ias_160611569818761_570x273_90.jpg"
+                                        class="brand-img" alt="7.MODIFIER女装-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">7.MODIFIER女装-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.7</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/18/87/ias_160566862436086_570x273_90.jpg"
+                                        class="brand-img" alt="YZC女装-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">YZC女装-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4.5</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/10/ias_160937555297620_570x273_90.jpg"
+                                        class="brand-img" alt="米皇mihuang羊绒-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">米皇mihuang羊绒-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/24/172/ias_a684381514b8c9b209cbf8aeb64b4be6_570x273_90.jpg"
+                                        class="brand-img" alt="AMII女装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">AMII女装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/31/ias_160939988834279_570x273_90.jpg"
+                                        class="brand-img" alt="La Chapelle SPORT女装-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">La Chapelle SPORT女装-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/21/1/ias_f758fe02c3326f38d4fa7de8ee76fc2c_570x273_90.jpg"
+                                        class="brand-img" alt="今典女装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">今典女装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多女装品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg4.com/upload/dop/2016/03/17/72/shoe.png" alt="鞋包">
+                        <a class="shop-all-btn" href="javascript:;">全部鞋包品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/9/ias_160939419358080_570x273_90.jpg"
+                                        class="brand-img" alt="皮尔·卡丹pierre cardin鞋包混合-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">皮尔·卡丹pierre cardin鞋包混合-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/10/30/191/ias_160402915365898_570x273_90.jpg"
+                                        class="brand-img" alt="暇步士Hush Puppies女鞋-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">暇步士Hush Puppies女鞋-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/06/30/6/ias_159348828537665_570x273_90.jpg"
+                                        class="brand-img" alt="鳄鱼恤CROCODILE箱包-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">鳄鱼恤CROCODILE箱包-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/31/35/ias_160939539721569_570x273_90.jpg"
+                                        class="brand-img" alt="马克华菲男女鞋箱包-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">马克华菲男女鞋箱包-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/37/ias_b4ed6ab2c68c06303f7b2d1dd16461c4_570x273_90.jpg"
+                                        class="brand-img" alt="热风HOTWIND男女鞋专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">热风HOTWIND男女鞋专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/30/142/ias_160931214583656_570x273_90.jpg"
+                                        class="brand-img" alt="BOSSSUNWEN男女鞋包-最后疯抢">
+                                    <div class="brand-info">
+                                        <span class="brand-name">BOSSSUNWEN男女鞋包-最后疯抢</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">0.9</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/20/51/ias_63b3fd59250e127a07a1e6fb642938f8_570x273_90.jpg"
+                                        class="brand-img" alt="拓路者男女鞋专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">拓路者男女鞋专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/30/16/ias_160929594627141_570x273_90.jpg"
+                                        class="brand-img" alt="红蜻蜓RED DRAGONFLY男女鞋包-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">红蜻蜓RED DRAGONFLY男女鞋包-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多鞋包品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg3.com/upload/dop/2018/02/01/196/men_hhqx.png" alt="男装">
+                        <a class="shop-all-btn" href="javascript:;">全部男装品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/08/05/149/ias_159659562398132_570x273_90.jpg"
+                                        class="brand-img" alt="EVISU高端个性服饰专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">EVISU高端个性服饰专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3.8</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/19/128/ias_077d513c731f7eaed7bcf247c1a6e5e3_570x273_90.jpg"
+                                        class="brand-img" alt="富贵鸟男装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">富贵鸟男装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.7</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/09/06/152/ias_3634dc65b9d7a79eea61e565eb54c234_570x273_90.jpg"
+                                        class="brand-img" alt="GXG男装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">GXG男装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4.9</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/09/23/150/ias_8b159f8ab1a82dd11c832f8ac7c7aaa8_570x273_90.jpg"
+                                        class="brand-img" alt="NO1DARA男上装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">NO1DARA男上装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4.9</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/26/132/ias_160636184599284_570x273_90.jpg"
+                                        class="brand-img" alt="GOLF高尔夫服配专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">GOLF高尔夫服配专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.2</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/13/54/ias_2ee781674bab037aea3d244a2eb0f91c_570x273_90.jpg"
+                                        class="brand-img" alt="吉普JEEP SPIRIT男装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">吉普JEEP SPIRIT男装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/18/94/ias_fe0beb7c0628a829ae25cff9f6b46270_570x273_90.jpg"
+                                        class="brand-img" alt="雅鹿男上装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">雅鹿男上装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3.5</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/24/100/ias_160880120939470_570x273_90.jpg"
+                                        class="brand-img" alt="七匹狼SEPTWOLVES男装-新年特卖专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">七匹狼SEPTWOLVES男装-新年特卖专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">0.4</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多鞋包品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg3.com/upload/dop/2016/03/17/183/sport.png" alt="运动">
+                        <a class="shop-all-btn" href="javascript:;">全部运动品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/30/12/ias_160671637362450_570x273_90.jpg"
+                                        class="brand-img" alt="Speedo泳装-特惠专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">Speedo泳装-特惠专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.2</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/31/40/ias_160940463753431_570x273_90.jpg"
+                                        class="brand-img" alt="范德安泳装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">范德安泳装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">0.6</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2021/01/01/174/ias_97569dea1e65a5781f85f9759c61dcd8_570x273_90.jpg"
+                                        class="brand-img" alt="361°运动户外专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">361°运动户外专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.3</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/09/23/150/ias_8b159f8ab1a82dd11c832f8ac7c7aaa8_570x273_90.jpg"
+                                        class="brand-img" alt="NO1DARA男上装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">NO1DARA男上装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4.9</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/10/12/72/ias_507c96c4c2a4d4ef519b44d84e317e67_570x273_90.jpg"
+                                        class="brand-img" alt="朵彩docare运动穿搭专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">朵彩docare运动穿搭专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/89/ias_79f4a16b22b12e501e96364a30afc833_570x273_90.jpg"
+                                        class="brand-img" alt="耐克Nike运动户外专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">耐克Nike运动户外专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.8</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/28/105/ias_0b0113266a7e75e16cfd74a3649ec1c9_570x273_90.jpg"
+                                        class="brand-img" alt="Dickies运动穿搭专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">Dickies运动穿搭专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/10/26/123/ias_3dab1ab9e12dc9f71c7e88761f79cf65_570x273_90.jpg"
+                                        class="brand-img" alt="凯乐石KAILAS运动穿搭专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">凯乐石KAILAS运动穿搭专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">0.7</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多运动品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg2.com/upload/dop/2016/03/17/77/watch.png" alt="饰品">
+                        <a class="shop-all-btn" href="javascript:;">全部饰品品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/149/ias_160938597182098_570x273_90.jpg"
+                                        class="brand-img" alt="恒源祥围巾帽子-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">恒源祥围巾帽子-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2021/01/01/176/ias_0b103868f5932ffe0054da0f4afe816d_570x273_90.jpg"
+                                        class="brand-img" alt="尚都比拉SENTUBILA首饰配饰专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">尚都比拉SENTUBILA首饰配饰专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/10/28/148/ias_198d2ed1739421d5b34ed56f478f5c2f_570x273_90.jpg"
+                                        class="brand-img" alt="皮尔·卡丹服饰配件专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">皮尔·卡丹服饰配件专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/09/04/14/ias_05b9b6b8d463a61f9b61901395ca53a9_570x273_90.jpg"
+                                        class="brand-img" alt="周六福珠宝首饰专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">周六福珠宝首饰专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.6</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/24/50/ias_e1a420c20dcd3eb8fb1a6071c292144e_570x273_90.jpg"
+                                        class="brand-img" alt="布塔PTAH服饰配件专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">布塔PTAH服饰配件专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.9</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/10/28/85/ias_6bfa58f6a7545766d1f09c5aa278f2cd_570x273_90.jpg"
+                                        class="brand-img" alt="中国黄金珠宝首饰专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">中国黄金珠宝首饰专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.9</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/18/99/ias_a13f6e32753a9464c2dd51f02fc21770_570x273_90.jpg"
+                                        class="brand-img" alt="京润珍珠gNpearl珠宝首饰专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">京润珍珠gNpearl珠宝首饰专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.2</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/09/04/107/ias_61092ac61435662e750468f97765b697_570x273_90.jpg"
+                                        class="brand-img" alt="明牌珠宝MINGR珠宝首饰专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">明牌珠宝MINGR珠宝首饰专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3.1</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多饰品品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg2.com/upload/dop/2016/03/17/116/beauty_wrf.png" alt="美妆">
+                        <a class="shop-all-btn" href="javascript:;">全部美妆品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/09/03/53/ias_a0f9691a94270c6a1d2fe2e58fed00f0_570x273_90.jpg"
+                                        class="brand-img" alt="汤姆福特TOM FORD专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">汤姆福特TOM FORD专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.2</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2021/01/01/17/ias_756891f8a8ad6f3131dc7b6b26e032d7_570x273_90.jpg"
+                                        class="brand-img" alt="悦诗风吟Innisfree美妆个护专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">悦诗风吟Innisfree美妆个护专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4.2</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/09/04/188/ias_6e2eb75aaba423d8d964e25691e8f255_570x273_90.jpg"
+                                        class="brand-img" alt="法国雅漾Avene面部护理专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">法国雅漾Avene面部护理专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.1</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/09/04/54/ias_f800bfecbe3acbc36d483feed94df191_570x273_90.jpg"
+                                        class="brand-img" alt="雅诗兰黛EsteeLauder护肤彩妆专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">雅诗兰黛EsteeLauder护肤彩妆专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.4</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/09/100/ias_72f64dab8218086cab637c5699ad673f_570x273_90.jpg"
+                                        class="brand-img" alt="日本肌肤之钥CPB护肤彩妆专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">日本肌肤之钥CPB护肤彩妆专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">5.4</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/16/1/ias_cad50f394cb4b9a1c8b55701a87e583b_570x273_90.jpg"
+                                        class="brand-img" alt="韩国兰芝LANEIGE美妆个护专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">韩国兰芝LANEIGE美妆个护专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4.7</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/16/61/ias_e3b8afbe7e7b38381bb30b9fd532e530_570x273_90.jpg"
+                                        class="brand-img" alt="碧欧泉BIOTHERM美容护肤专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">碧欧泉BIOTHERM美容护肤专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">5.5</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/09/04/162/ias_0c58d57f825976be6959fd3f2cd268d2_570x273_90.jpg"
+                                        class="brand-img" alt="海蓝之谜LA MER美容护肤专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">海蓝之谜LA MER美容护肤专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">6.2</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多美妆品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg4.com/upload/dop/2016/03/17/156/kid_zZb.png" alt="母婴">
+                        <a class="shop-all-btn" href="javascript:;">全部母婴品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/51/ias_160940629593949_570x273_90.jpg"
+                                        class="brand-img" alt="笛莎童装-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">笛莎童装-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.9</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/10/194/ias_be0245506c9cc6f7580cb2f67efd70ef_570x273_90.jpg"
+                                        class="brand-img" alt="贝贝怡Bornbay母婴鞋服专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">贝贝怡Bornbay母婴鞋服专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/03/04/155/ias_158330856944719_570x273_90.jpg"
+                                        class="brand-img" alt="博朗&美德玛海外母婴">
+                                    <div class="brand-info">
+                                        <span class="brand-name">博朗&美德玛海外母婴</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.3</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/01/145/ias_160420314428953_570x273_90.jpg"
+                                        class="brand-img" alt="罗蒙童装 最后疯抢">
+                                    <div class="brand-info">
+                                        <span class="brand-name">罗蒙童装 最后疯抢</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/10/23/134/ias_96f42f9d2e3f48c3840b1e42b06e404c_570x273_90.jpg"
+                                        class="brand-img" alt="韩国ASK junior男女童装-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">韩国ASK junior男女童装-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/20/114/ias_37d3158e8a18954b5d72d3b9d9063339_570x273_90.jpg"
+                                        class="brand-img" alt="拓路者童装专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">拓路者童装专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/31/74/ias_160940118894836_570x273_90.jpg"
+                                        class="brand-img" alt="富铤童装-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">富铤童装-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/30/190/ias_160929898416642_570x273_90.jpg"
+                                        class="brand-img" alt="耐克Nike-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">耐克Nike-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">4</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多母婴品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg2.com/upload/dop/2016/03/17/144/home_zhs.png" alt="母婴">
+                        <a class="shop-all-btn" href="javascript:;">全部家居品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/20/75/ias_215bc38e743ebcd9e47a4e71539eeecc_570x273_90.jpg"
+                                        class="brand-img" alt="皮尔·卡丹床上用品专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">皮尔·卡丹床上用品专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/26/42/ias_7cc7871d2dfe56158f3b5770e1823f05_570x273_90.jpg"
+                                        class="brand-img" alt="儿童床品三折封顶专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">儿童床品三折封顶专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/20/11/ias_a2077038f8ef16d81838b3af426f6c9c_570x273_90.jpg"
+                                        class="brand-img" alt="红豆HOdo床上用品专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">红豆HOdo床上用品专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.8</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/13/187/ias_160525133079163_570x273_90.jpg"
+                                        class="brand-img" alt="恒源祥家纺-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">恒源祥家纺-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2021/01/02/103/ias_4dbc86257355b1b360f3841332ee7447_570x273_90.jpg"
+                                        class="brand-img" alt="床上用品 梦洁集团专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">床上用品 梦洁集团专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/10/29/149/ias_531bc44db6f8f0cb9338dff812c903ac_570x273_90.jpg"
+                                        class="brand-img" alt="床上用品 富安娜集团专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">床上用品 富安娜集团专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">0.5</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/11/30/54/ias_160670789751693_570x273_90.jpg"
+                                        class="brand-img" alt="罗莱生活旗下LOVO家纺">
+                                    <div class="brand-info">
+                                        <span class="brand-name">罗莱生活旗下LOVO家纺</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">0.4</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/11/12/42/ias_8aeef284f65bae9f1967f23b6ba68f6b_570x273_90.jpg"
+                                        class="brand-img" alt="悦语家居百货专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">悦语家居百货专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多家居品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-sort band-wrap">
+                    <div class="shop-sort-title">
+                        <img src="https://a.vpimg2.com/upload/dop/2016/06/02/199/life-titel.png" alt="母婴">
+                        <a class="shop-all-btn" href="javascript:;">全部生活品牌&nbsp;
+                            <i class="iconfont">&#xe626;</i>
+                        </a>
+                    </div>
+                    <div class="brand-wrap">
+                        <div class="brand-item-data">
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/30/24/ias_160932420666475_570x273_90.jpg"
+                                        class="brand-img" alt="馋嘴零食-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">馋嘴零食-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3。1</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2020/12/14/63/ias_6d5a4b6c0f54f13351e23e33c29eacce_570x273_90.jpg"
+                                        class="brand-img" alt="熟食烘焙 百钻/展艺/林道斯等专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">熟食烘焙 百钻/展艺/林道斯等专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.8</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://c.vpimg1.com/upcb/2021/01/05/99/ias_5f75dc55ac697b5bddd67c71c8959876_570x273_90.jpg"
+                                        class="brand-img" alt="食品饮料 三只松鼠等专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">食品饮料 三只松鼠等专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/31/179/ias_f357421619f222289a0e2d8e7bf6f4ff_570x273_90.jpg"
+                                        class="brand-img" alt="休闲零食 新农哥/百草味专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">休闲零食 新农哥/百草味专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.1</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/31/132/ias_160940328546670_570x273_90.jpg"
+                                        class="brand-img" alt="营养滋补-最后疯抢专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">营养滋补-最后疯抢专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">3</span>折封顶</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2021/01/05/132/ias_ad1682a9151a2bdf96765ab5532746f3_570x273_90.jpg"
+                                        class="brand-img" alt="食材调味 海底捞/富昌等专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">食材调味 海底捞/富昌等专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.9</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2021/01/05/100/ias_f3df7f2f22c5f37a0c5012c88c232020_570x273_90.jpg"
+                                        class="brand-img" alt="生鲜 小牛凯西等专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">生鲜 小牛凯西等专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">2.1</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="brand-item">
+                                <a href="javascript:;" class="brand-item-hover">
+                                    <img src="https://d.vpimg1.com/upcb/2020/12/11/172/ias_7ff4337c3822e4eca17acda5cdce1bd1_570x273_90.jpg"
+                                        class="brand-img" alt="休闲零食 德芙/不二家/KDV等专场">
+                                    <div class="brand-info">
+                                        <span class="brand-name">休闲零食 德芙/不二家/KDV等专场</span>
+                                        <div class="brand-discount-pms">
+                                            <span class="brand-discount"><span class="salebg2">1.8</span>折起</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <span class="ui-btn-fav">
+                                    <span class="ui-btn-fav-like">
+                                        <i class="iconfont">&#xeca1;</i>
+                                        <span class="fav-hidden">收藏品牌</span>
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="shop-sort-ft">
+                                <a href="javascript:;" class="shop-more-btn">逛更多生活品牌</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="index-nav-sort is-lift-nav-fixed">
+                    <div class="index-nav-wrap" id="index-nav-wrap">
+                        <div class="index-nav-list">
+                            <a href="javascript:;" class="index-nav-item curr">
+                                <span class="nav-icon iconfont">&#xe60f;</span>
+                                <span class="nav-title">女装</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe649;</span>
+                                <span class="nav-title">鞋包</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe627;</span>
+                                <span class="nav-title">男装</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe600;</span>
+                                <span class="nav-title">运动</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe612;</span>
+                                <span class="nav-title">饰品</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe603;</span>
+                                <span class="nav-title">美妆</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe60d;</span>
+                                <span class="nav-title">母婴</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe620;</span>
+                                <span class="nav-title">居家</span>
+                            </a>
+                            <a href="javascript:;" class="index-nav-item">
+                                <span class="nav-icon iconfont">&#xe827;</span>
+                                <span class="nav-title">生活</span>
+                            </a>
+                        </div>
+                        <div class="index-nav-tips hidden" style="display: none;">
+                            <div class="index-nav-tips-bg"></div>
+                            <div class="vipFont  index-nav-tips-close"></div>
+                        </div>
+                    </div>
+                    <div class="index-nav-image"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer class="footer-inner" id="footer">
+            <ul class="footer-vip">
+                <li>
+                    <i class="footer-vip-v2-ico01">全球领先</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico02">正品货源</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico03">全球直采</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico04">自营仓储</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico05">入仓检验</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico06">正品保险</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico07">无忧退换</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico08">万千信赖</i>
+                </li>
+            </ul>
+            <div class="footer-list">
+                <dl class="link-anim">
+                    <dt>服务保障</dt>
+                    <dd>
+                        <a href="javascript:;">正品保证</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"></a>7天无理由放心退</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/commitment.php" class="J_common_help"></a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">7x15小时客户服务</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">7天无理由随心换</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="javascript:;">导购演示</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">订单操作</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">会员注册</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">收货样品</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">会员等级</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="javascript:;">23家主流网银支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">支付宝、银联等支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">信用卡支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">零钱支付</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="javascript:;">配送范围及运费</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">验货与签收</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="javascript:;">退货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">退货流程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">退款方式和时效</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">换货服务</a>
+                    </dd>
+                </dl>
+                <dl class="tc last">
+                    <dt>唯品会APP二维码</dt>
+                    <dd>
+                        <img class="lazy"
+                            src="https://a.vpimg4.com/upload/actpics/xuangou_daily/help/page_bottom_dl_n.png"
+                            width="100" height="100" alt="唯品会APP二维码">
+                    </dd>
+                    <dd>下载唯品会移动APP</dd>
+                </dl>
+            </div>
+            <div class="footer-infor">
+                <p class="footer-infor-link">
+                    <a href="javascript:;" title="关于我们">关于我们</a>|
+                    <a href="javascript:;" title="About us">About us</a>|
+                    <a href="javascript:;" title="Investor Relations">Investor Relations</a>|
+                    <a href="javascript:;" title="媒体报道">媒体报道</a>|
+                    <a href="javascript:;" title="品牌招商">品牌招商</a>|
+                    <a href="javascript:;" title="隐私条款">隐私条款</a>|
+                    <a href="javascript:;" title="唯品诚聘">唯品诚聘</a>|
+                    <a href="javascript:;" title="唯品卡">唯品卡</a>|
+                    <a href="javascript:;" title="联系我们">联系我们</a>|
+                    <a href="javascript:;" title="廉正举报">廉正举报</a>
+                </p>
+                <p class="footer-infor-txt">
+                    Copyright © 2008-2021 vip.com，All Rights Reserved&nbsp;&nbsp;使用本网站即表示接受
+                    <a href="javascript:;">唯品会用户协议</a>。版权所有
+                    <a href="javascript:;">广州唯品会电子商务有限公司</a>
+                    <br>
+                    <a href="javascript:;">
+                        <img src="https://a.vpimg4.com/upload/actpics/act/sp/police_icon.png" width="14" height="14"
+                            style="margin:2px 3px 0 0;">粤公网安备 44010302111111号
+                    </a>&nbsp;&nbsp;
+                    <a href="javascript:;">粤ICP备08114786号</a>
+                    <a href="javascript:;">增值业务经营许可证：粤B2-20170777 </a>
+                    <a href="javascript:;">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+                    <br>
+                    <a href="javascript:;">经营主体证照</a>&nbsp;&nbsp;
+                    <a href="javascript:;">风险监测信息</a>&nbsp;&nbsp;
+                    <a href="javascript:;">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+                    <a href="javascript:;"> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+                    <a href="javascript:;">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                </p>
+            </div>
+            <div class="footer-ft">
+                <p class="footer-pic">
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico01" title="银联特约商户"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico04" title="消费维权服务站"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico11" title="不良信息举报中心"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico06" title="网络警察报警平台"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico07" title="公安局网络警察支队"></i>
+                    </a>
+                    <a href="javascript:;" id="___szfw_logo___">
+                        <i class="footer-pic-ico09" title="诚信网站"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico10" title="可信网站"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

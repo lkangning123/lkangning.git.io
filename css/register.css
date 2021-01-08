@@ -1,0 +1,223 @@
+
+.content .title {
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #e0e0e0;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.title .title_l {
+    float: left;
+    font-size: 18px;
+    color: #666;
+}
+
+.title .title_l h3 {
+    font-weight: bold;
+}
+
+.title .title_r {
+    float: right;
+}
+
+.title .title_r a {
+    color: #f10180;
+}
+
+.content .content-body {
+    padding: 30px;
+}
+
+.form-group {
+    position: relative; 
+    vertical-align: top;
+    display: inline-block;
+}
+.warning{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 11;
+    padding-right: 10px;
+    padding-left: 5px;
+    line-height: 44px;
+    font-size: 17px;
+    background: #fff;
+    visibility: hidden;
+    border-radius: 3px;
+    color: #f64a4a;;
+}
+.success{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 11;
+    padding-right: 10px;
+    padding-left: 5px;
+    line-height: 44px;
+    font-size: 17px;
+    background: #fff;
+    border-radius: 3px;
+    visibility: hidden;
+    color: #47b85c;
+ }
+.form-group .code-warn{
+    right: 143px;
+    top: 2px;
+}
+.form-group .code-success{
+    right: 143px;
+    top: 2px;
+}
+.input-group {
+    width: 250px;
+    height: 32px;
+    line-height: 32px;
+    padding: 6px 10px;
+    padding-left: 40px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #b2b2b2;
+    border-radius: 3px;
+    outline: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 13px;
+    left: 11px;
+    z-index: 1;
+    background-image: url(http://member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+    width: 20px;
+    height: 20px;
+}
+
+.icon-mobile {
+    background-position: -456px -221px;
+}
+
+.icon-code {
+    background-position: -480px -221px;
+}
+
+.icon-password {
+    background-position: -528px -221px;
+}
+
+.form-tip {
+    font-size: 12px;
+    color: #ec5042;
+    position: relative;
+    min-height: 19px;
+    max-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    display: block;
+}
+
+.input-code .code {
+    border-radius: 2px;
+    padding: 0 9px;
+    text-align: center;
+    width: 106px;
+    display: inline-block;
+    font-size: 14px;
+    height: 44px;
+    line-height: 44px;
+}
+
+.secondary {
+    color: #e00078;
+    background-color: #fcedf2;
+    border: 1px solid #ffbee0;
+}
+
+.disable {
+    border: 1px solid #d0d0d0;
+    color: #999;
+    background: #d0d0d0;
+    cursor: not-allowed;
+}
+.strength-item-bg{
+    width: 30px;
+    height: 8px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    display: none;
+}
+.strength-item {
+    width: 0px;
+    height: 8px;
+    display: block;
+    background-color: #f9a123;
+}
+
+.strength-text {
+    padding-right: 10px;
+    font-size: 12px;
+    display: none;
+    color: #f64a4a;
+}
+
+
+/* 唯品会条款 */
+
+.ui-checkbox {
+    vertical-align: top;
+    width: 19px;
+}
+
+.ui-checkbox-normal {
+    display: none;
+}
+
+.ui-checkbox-bg {
+    display: inline-block;
+    background-image: url(http://bootstrap.vipstatic.com/img/ui/sprite.png?d9eadd17);
+    background-position: -48px 0;
+    width: 19px;
+    height: 16px;
+}
+
+.u-provision-txt {
+    vertical-align: middle;
+    font-size: 12px;
+    display: inline-block;
+    width: 276px;
+    line-height: 1.5;
+}
+
+.u-provision-txt a {
+    color: #1d94d1;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.mb .btn-large {
+    font-size: 16px;
+    width: 298px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 4px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+    color: white;
+    background-color: #f10180;
+    border: 1px solid #f10180;
+}
+

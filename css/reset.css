@@ -1,0 +1,89 @@
+/* 网页重置  css reset  */
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0
+}
+
+html,
+body {
+    /* 设置页面默认字号与字体 */
+    font: 14px "微软雅黑", Arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+    /* 清除标签默认加粗 */
+    font-weight: normal;
+    font-size: 100%;
+}
+
+i,
+em {
+    /* 清除标签默认倾斜 */
+    font-style: normal;
+}
+
+a {
+    /* 清除标签默认下划线与文字颜色 */
+    color: #555555;
+    text-decoration: none;
+}
+
+li {
+    /* 清除标签默认的项目符号 */
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+
+/* 帮助解决图片被嵌套后的3~6像素bug */
+
+img {
+    vertical-align: middle;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>唯品会 我的购物车</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <script src="./lib/jquery1.12.4.min.js"></script>
+    <script src="./lib/swiper.js"></script>
+    <script src="./js/cart.js"></script>
+</head>
+
+<body>
+    <header id="vip-common-header" class="header">
+        <nav class="top-nav">
+            <div id="J-top-nav" class="head-inner">
+                <div class="m-logo">
+                    <a href="./index.html" class="logo-link">
+                        <img src="https://a.vpimg2.com/upload/upimg2/slogan/cartHeader.png" alt="品牌特卖">
+                    </a>
+                </div>
+                <ul class="top-nav-tool" id="topNavTool">
+                    <li class="mp-my">
+                        <ul id="head_log" class="login-before user-no-cookies">
+                            <li class="wp-user">
+                                <a href="./login.html">请登录</a>
+                            </li>
+                            <li class="register-user">
+                                <a href="./register.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="wp-sign">
+                        <a href="javasctipt:;">
+                            <i class="wp-sign-icon"></i>
+                            <span>签到有礼</span>
+                        </a>
+                    </li>
+                    <li class="wp-order">
+                        <a href="javascript:;">我的订单</a>
+                    </li>
+                    <li class="wp-service">
+                        <span class="service-in">
+                            <a href="javascript:;">客户服务</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <p class="top-nav-list">
+                                <span>
+                                    <a href="javascript:;">联系客服</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">帮助中心</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">服务中心</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">知识产权投诉</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-phone">
+                        <span class="phone-in">
+                            <i class="ico-mob"></i>
+                            <a href="javascript:;">手机版</a>
+                        </span>
+                        <div class="top-nav-dis phone-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <div class="tc">
+                                <a href="javascript:;">
+                                    <img src="https://b.appsimg.com/2016/06/17/863/1466134037230.jpg" alt="二维码"
+                                        width="161" height="161" class="qrcode_img">
+                                </a>
+                            </div>
+                            <p class="top-nav-list">
+                                <a href="javascript:;">随时逛 及时抢</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-business">
+                        <span class="service-in">
+                            <a href="javascript:;">更多</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor-more">
+                            <i class="ico-arw-bodder"></i>
+                            <h5 class="service-more-hd clearfix">合作专区</h5>
+                            <p class="top-nav-list clearfix">
+                                <a href="javascript:;">唯品卡</a>
+                            </p>
+                            <h5 class="service-more-hd clearfix service-more-hd2">关于我们</h5>
+                            <p class="top-nav-list clearfix service-more-p">
+                                <a href="javascript:;">Sell on vip</a>
+                                <a href="javascript:;//viva.vip.com/act/supportInvestment-pc?wapid=vivac_812">品牌招商</a>
+                                <a href="javascript:;">官方博客</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="c-helper-small">
+                    <li class="helper-small-item">
+                        <span class="ggct-glyphicon helper-small-glyphicon"></span>
+                        <span class="helper-small-text">100% 正品保证</span>
+                    </li>
+                    <li class="helper-small-item">
+                        <span class="seven-glyphicon helper-small-glyphicon"></span>
+                        <span class="helper-small-text">七天无理由放心退</span>
+                    </li>
+                    <li class="helper-small-item">
+                        <span class="buyLimit-glyphicon helper-small-glyphicon"></span>
+                        <span class="helper-small-text">限时抢购</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="g-bd">
+        <div class="row container">
+            <div class="cart-tab">
+                <a href="javascript:void(0)" class="cart-tab-item cart-tab-item-selected">
+                    <span>特卖商品</span>
+                </a>
+            </div>
+            <!-- 空购物车 -->
+            <div class="m-cart-tips cart-empty-tips">
+                <span class="icon-cart-tips icon-cart-empty"></span>
+                <div class="cart-tips-cnt">
+                    <div class="cart-tips-text">
+                        <p class="c-empty-title">购物袋空空如也，</p>
+                        <p class="c-empty-text">快去抢购心仪商品吧~</p>
+                    </div>
+                    <div class="cart-tips-actions">
+                        <a class="ui-btn-primary  ui-btn-medium" href="javascript:;">立即抢购 </a>
+                        <a class="ui-btn-default  ui-btn-medium" href="javascript:;">查看订单</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 有东西的购物车 -->
+            <div class="cart-wrapper">
+                <div class="m-order">
+                    <div class="orders-hd">
+                        <ul class="m-inline-block">
+                            <li class="inline-block-item product-item">
+                                <div class="u-checkbox J_checkbox
+                                z-checkbox-checked 
+                                " data-checkbox="cartInfo">
+                                    <input name="cartList" type="checkbox" value="" class="J_carList J_supplier"
+                                        id="J_orders_checkbox_carList">
+                                    <label for="J_orders_checkbox_carList" class="simulate"></label>
+                                </div>
+                                <span class="text checkall">全选</span>
+                                <span class="text product">商品</span>
+                            </li>
+
+                            <li class="inline-block-item price-item">
+                                <span class="text">单价</span>
+                            </li>
+                            <li class="inline-block-item quantity-item">
+                                <span class="text">数量</span>
+                            </li>
+                            <li class="inline-block-item actions-item">
+                                <span class="text">操作</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="product-item-title" title="唯品自营">
+                        <div class="u-checkbox J_checkbox 
+                        z-checkbox-checked">
+                            <input name="supplier_id" type="checkbox" value="0" class="J_supplier" id="orders_checkbox">
+                            <label for="J_orders_checkbox_0" class="simulate"></label>
+                        </div>
+                        唯品自营
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer class="footer-inner" id="footer">
+            <div class="footer-infor">
+                <p class="footer-infor-link">
+                    <a href="javascript:;" title="关于我们">关于我们</a>|
+                    <a href="javascript:;" title="About us">About us</a>|
+                    <a href="javascript:;" title="Investor Relations">Investor Relations</a>|
+                    <a href="javascript:;" title="媒体报道">媒体报道</a>|
+                    <a href="javascript:;" title="品牌招商">品牌招商</a>|
+                    <a href="javascript:;" title="隐私条款">隐私条款</a>|
+                    <a href="javascript:;" title="唯品诚聘">唯品诚聘</a>|
+                    <a href="javascript:;" title="唯品卡">唯品卡</a>|
+                    <a href="javascript:;" title="联系我们">联系我们</a>|
+                    <a href="javascript:;" title="廉正举报">廉正举报</a>
+                </p>
+                <p class="footer-infor-txt">
+                    Copyright © 2008-2021 vip.com，All Rights Reserved&nbsp;&nbsp;使用本网站即表示接受
+                    <a href="javascript:;">唯品会用户协议</a>。版权所有
+                    <a href="javascript:;">广州唯品会电子商务有限公司</a>
+                    <br>
+                    <a href="javascript:;">
+                        <img src="https://a.vpimg4.com/upload/actpics/act/sp/police_icon.png" width="14" height="14"
+                            style="margin:2px 3px 0 0;">粤公网安备 44010302111111号
+                    </a>&nbsp;&nbsp;
+                    <a href="javascript:;">粤ICP备08114786号</a>
+                    <a href="javascript:;">增值业务经营许可证：粤B2-20170777 </a>
+                    <a href="javascript:;">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+                    <br>
+                    <a href="javascript:;">经营主体证照</a>&nbsp;&nbsp;
+                    <a href="javascript:;">风险监测信息</a>&nbsp;&nbsp;
+                    <a href="javascript:;">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+                    <a href="javascript:;"> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+                    <a href="javascript:;">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                </p>
+            </div>
+            <div class="footer-ft">
+                <p class="footer-pic">
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico01" title="银联特约商户"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico04" title="消费维权服务站"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico11" title="不良信息举报中心"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico06" title="网络警察报警平台"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico07" title="公安局网络警察支队"></i>
+                    </a>
+                    <a href="javascript:;" id="___szfw_logo___">
+                        <i class="footer-pic-ico09" title="诚信网站"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico10" title="可信网站"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

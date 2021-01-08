@@ -1,0 +1,71 @@
+/* 注册登录公共样式 */
+
+/* 头部部分 */
+
+.header-inner {
+    height: 100px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+}
+
+.logo .logo-link {
+    background: url(http://member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+    background-position: -308px -57px;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 125px;
+    height: 100px;
+}
+
+.header-service {
+    background: url(http://member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+    background-position: 0 0;
+    width: 304px;
+    height: 100px;
+    float: right;
+}
+
+.body-bg {
+    width: 100%;
+    height: 650px;
+    background: url(http://b.appsimg.com/upload/momin/2020/12/14/15/1607915393371.jpg);
+    background-position: top center;
+}
+
+/* 主体内容 */
+
+.content-inner {
+    padding: 50px 20px;
+    min-height: 550px;
+    width: 1000px;
+}
+
+.content-inner .content {
+    float: right;
+    width: 360px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+/* 底部部分 */
+
+.footer {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 78px;
+    line-height: 78px;
+}
+
+.copyright {
+    color: #666;
+    text-align: center;
+}
+
+.input-code .input-group {
+    width: 106px;
+    margin-right: 10px;
+}

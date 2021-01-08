@@ -1,0 +1,389 @@
+
+.content .title {
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0;
+}
+.title-item{
+    display: inline-block;
+    width: 180px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 50px;
+    overflow: hidden;
+}
+.title_l {
+    color: #f10180;
+    cursor: default;
+    position: relative;
+    z-index: 1;
+}
+.title .title_l:hover,.title .title_r:hover{
+    color: #f10180;
+}
+.title .title_l::after{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: 1;
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+    content: '';
+    font-size: 0;
+    line-height: 0;
+}
+.title_r{
+    color: #666;
+    cursor: pointer;
+}
+
+.tab-panel{
+    width: 360px;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+/* 扫码登录 */
+.tab-panel-qr {
+    padding-top: 36px;
+    text-align: center;
+    display: none;
+}
+
+.tab-qr-row {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 192px;
+}
+.qr-img-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 94px;
+    z-index: 2;
+    margin-top: -86px;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+}
+.qr-guide-text{
+    margin-top: 20px;
+    color: #333;
+    font-size: 12px;
+    position: relative;
+    line-height: 16px;
+}
+.scan{
+    color: #ccc;
+    position: absolute;
+    top: 2px;
+    left: 50px;
+}
+.u-text{
+    color: #f10180;
+    line-height: 16px;
+}
+
+/* 账户登录 */
+.tab-panel-form{
+    display: none;
+    padding: 35px 30px 0px 30px;
+}
+.form-group {
+    position: relative; 
+    vertical-align: top;
+    display: inline-block;
+}
+.warning{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 11;
+    padding-right: 10px;
+    padding-left: 5px;
+    line-height: 44px;
+    font-size: 17px;
+    background: #fff;
+    visibility: hidden;
+    border-radius: 3px;
+    color: #f64a4a;;
+}
+.success{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 11;
+    padding-right: 10px;
+    padding-left: 5px;
+    line-height: 44px;
+    font-size: 17px;
+    background: #fff;
+    border-radius: 3px;
+    visibility: hidden;
+    color: #47b85c;
+ }
+ .input-group {
+     width: 250px;
+     height: 32px;
+     line-height: 32px;
+     padding: 6px 10px;
+     padding-left: 40px;
+     color: #333;
+     background-color: #fff;
+     border: 1px solid #b2b2b2;
+     border-radius: 3px;
+     outline: 0;
+ }
+ .icon {
+     position: absolute;
+     top: 13px;
+     left: 11px;
+     z-index: 1;
+     background-image: url(http://member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+     width: 20px;
+     height: 20px;
+ }
+ 
+ .icon-mobile {
+     background-position: -456px -221px;
+ }
+ 
+.icon-password {
+    background-position: -528px -221px;
+}
+
+.form-tip {
+    font-size: 12px;
+    color: #ec5042;
+    position: relative;
+    min-height: 19px;
+    max-height: 36px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    display: block;
+}
+.form-item{
+    padding-bottom: 22px;    
+    width: 300px;
+    height: 19px;
+}
+.form-item-l{
+    float: left;
+}
+.form-item-r{
+    float: right;
+    font-size: 12px;
+}
+
+.form-item-l a:hover,.form-item-r a:hover{
+    color: #f10180;
+}
+
+.btn-large {
+    font-size: 16px;
+    width: 298px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 4px;
+    display: inline-block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    -webkit-transition: .3s;
+    transition: .3s;
+    cursor: pointer;
+    color: white;
+    background-color: #f10180;
+    border: 1px solid #f10180;
+}
+
+.tab-panel-footer {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.tab-panel-third {
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.tab-panel-third::before{
+    display: table;
+    content: '';
+}
+
+.tab-third-special{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.tab-third-special::before{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -30px;
+    z-index: 2;
+    width: 60px;
+    height: 40px;
+    content: '';
+    background-color: #fff;
+}
+
+.tab-third-special::after{
+    position: absolute;
+    z-index: 1;
+    content: '';
+    top: 20px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+}
+.third-wechat-wrapper{
+    position: relative;
+    z-index: 2;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+}
+.third-wechat{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    color: #333;
+}
+
+.third-wechat-icon{
+    background-image: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+    background-position: -580px -161px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+}
+.third-wechat-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+.f-right {
+    padding-top: 1px;
+    float: right;
+}
+.tab-third-main{
+    font-size: 12px;
+    margin-left: -10px;
+}
+.tab-third-main::after{
+    clear: both;
+    display: table;
+    content: "";
+}
+.tab-third-main-list{
+    display: inline-block;
+    vertical-align: top;
+}
+.tab-third-main-item{
+    float: left;
+    position: relative;
+    margin-bottom: 5px;
+    padding-right: 11px;
+    padding-left: 10px;
+    line-height: 24px;
+}
+.tab-third-main-item::after,.tab-third-other-item::after{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 1;
+    margin-top: -5px;
+    height: 10px;
+    content: '';
+    border-left: 1px solid #e0e0e0;
+}
+.tab-third-link:hover{
+    color: #f10180;
+}
+.tab-third-item-disabled{
+    cursor: default;
+    color: #999;
+}
+.tab-third-item-disabled:hover{
+    color: #999;
+}
+.tab-third-more-button{
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 24px;
+    color: #999;
+}
+.tab-third-more-expand {
+    display: none;
+}
+.vipFont{
+    font-size: 10px;
+    margin-left: 5px;
+    line-height: 24px;
+}
+.tab-third-more{
+    display: none;
+    padding-top: 10px;
+}
+.tab-third-other-list{
+    margin-left: -15px;
+    width: 330px;
+    font-size: 0;
+}
+.tab-third-other-item{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 5px;
+    min-width: 66px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 12px;
+}
+.tab-third-offline-notice{
+    font-size: 12px;
+    padding-left: 17px;
+    padding-top: 2px;
+    position: relative;
+}
+.tab-third-offline-notice::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background-image: url(https://member-ssl.vipstatic.com/img/passport/sprites-hash-c9975078.png?4eaaf192);
+    background-position: -536px -205px;
+    width: 12px;
+    height: 12px;
+}
+.tab-third-offline-notice a{
+    color: #999;
+}
+.active{
+    display: block;
+}

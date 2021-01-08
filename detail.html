@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/detail.css">
+
+    <script src="./lib/jquery1.12.4.min.js"></script>
+    <script src="./lib/swiper.js"></script>
+    <script src="./js/detail.js"></script>
+</head>
+
+<body>
+    <header id="vip-common-header" class="header">
+        <nav class="top-nav">
+            <div id="J-top-nav" class="head-inner">
+                <!-- 点击c-h-area添加h-area-expanded类名，显示h-area-body -->
+                <div id="header_address_container" class="c-h-area h-area-expanded">
+                    <div class="h-area-header">
+                        <div class="h-area-title">深圳市</div>
+                        <!-- 点击h-area-triangle隐藏h-area-body -->
+                        <div class="h-area-triangle"></div>
+                    </div>
+                    <div class="h-area-body f-hide" id="header_area_content">
+                        <p class="h-area-explain">请选择你所在的收货地址</p>
+                        <div class="h-area-tab">
+                            <div class="h-area-tab-header">
+                                <ul class="h-area-tab-title">
+                                    <!-- 点击li给该li添加h-area-tab-title-item-current类名 -->
+                                    <li id="header_tab_province"
+                                        class="header_address_tab h-area-tab-title-item h-area-tab-title-item-current"
+                                        data-flag="province">省份</li>
+                                    <li id="header_tab_city" class="header_address_tab h-area-tab-title-item"
+                                        data-flag="city">城市</li>
+                                    <li id="header_tab_country" class="header_address_tab h-area-tab-title-item f-hide"
+                                        data-flag="country">县区</li>
+                                    <li id="header_tab_street" class="header_address_tab h-area-tab-title-item f-hide"
+                                        data-flag="country">街道</li>
+                                </ul>
+                            </div>
+                            <div class="h-area-tab-body">
+                                <ul id="header_province_contanier" class="h-area-list h-area-list-province">
+                                    <!-- h-area-item-current是当前选中项 -->
+                                    <li class="h-area-item header_select_item101101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="北京市"
+                                            data-type="0" data-id="101101" data-name="北京市">北京市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="天津市"
+                                            data-type="0" data-id="101102" data-name="天津市">天津市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="河北省"
+                                            data-type="0" data-id="101103" data-name="河北省">河北省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="山西省"
+                                            data-type="0" data-id="101104" data-name="山西省">山西省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item101105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="内蒙古自治区"
+                                            data-type="0" data-id="101105" data-name="内蒙古自治区">内蒙古自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item102101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="辽宁省"
+                                            data-type="0" data-id="102101" data-name="辽宁省">辽宁省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item102102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="吉林省"
+                                            data-type="0" data-id="102102" data-name="吉林省">吉林省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item102103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="黑龙江省"
+                                            data-type="0" data-id="102103" data-name="黑龙江省">黑龙江省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="上海市"
+                                            data-type="0" data-id="103101" data-name="上海市">上海市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="江苏省"
+                                            data-type="0" data-id="103102" data-name="江苏省">江苏省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="浙江省"
+                                            data-type="0" data-id="103103" data-name="浙江省">浙江省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="安徽省"
+                                            data-type="0" data-id="103104" data-name="安徽省">安徽省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="福建省"
+                                            data-type="0" data-id="103105" data-name="福建省">福建省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103106">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="江西省"
+                                            data-type="0" data-id="103106" data-name="江西省">江西省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item103107">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="山东省"
+                                            data-type="0" data-id="103107" data-name="山东省">山东省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="河南省"
+                                            data-type="0" data-id="104101" data-name="河南省">河南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="湖北省"
+                                            data-type="0" data-id="104102" data-name="湖北省">湖北省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="湖南省"
+                                            data-type="0" data-id="104103" data-name="湖南省">湖南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104104 h-area-item-current">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="广东省"
+                                            data-type="0" data-id="104104" data-name="广东省">广东省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="广西壮族自治区"
+                                            data-type="0" data-id="104105" data-name="广西壮族自治区">广西壮族自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item104106">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="海南省"
+                                            data-type="0" data-id="104106" data-name="海南省">海南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105100">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="重庆市"
+                                            data-type="0" data-id="105100" data-name="重庆市">重庆市</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="四川省"
+                                            data-type="0" data-id="105101" data-name="四川省">四川省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="贵州省"
+                                            data-type="0" data-id="105102" data-name="贵州省">贵州省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="云南省"
+                                            data-type="0" data-id="105103" data-name="云南省">云南省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item105104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="西藏自治区"
+                                            data-type="0" data-id="105104" data-name="西藏自治区">西藏自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106101">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="陕西省"
+                                            data-type="0" data-id="106101" data-name="陕西省">陕西省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106102">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="甘肃省"
+                                            data-type="0" data-id="106102" data-name="甘肃省">甘肃省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106103">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="青海省"
+                                            data-type="0" data-id="106103" data-name="青海省">青海省</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106104">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="宁夏回族自治区"
+                                            data-type="0" data-id="106104" data-name="宁夏回族自治区">宁夏回族自治区</a>
+                                    </li>
+                                    <li class="h-area-item header_select_item106105">
+                                        <a href="javascript:;" class="h-area-link header_select_item" title="新疆维吾尔自治区"
+                                            data-type="0" data-id="106105" data-name="新疆维吾尔自治区">新疆维吾尔自治区</a>
+                                    </li>
+                                </ul>
+                                <ul id="hrader_city_container" class="h-area-list h-area-list-city"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="top-nav-tool" id="topNavTool">
+                    <li class="mp-my">
+                        <ul id="head_log" class="login-before user-no-cookies">
+                            <li class="wp-user">
+                                <a href="./login.html">请登录</a>
+                            </li>
+                            <li class="register-user">
+                                <a href="./register.html">注册</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="wp-sign">
+                        <a href="javasctipt:;">
+                            <i class="wp-sign-icon"></i>
+                            <span>签到有礼</span>
+                        </a>
+                    </li>
+                    <li class="wp-order">
+                        <a href="javascript:;">我的订单</a>
+                    </li>
+                    <li class="wp-service">
+                        <span class="service-in">
+                            <a href="javascript:;">我的特卖</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <p class="top-nav-list">
+                                <span>
+                                    <a href="javascript:;">商品收藏</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">品牌收藏</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">我的足迹</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-service">
+                        <span class="service-in">
+                            <a href="javascript:;">会员俱乐部</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <p class="top-nav-list">
+                                <span>
+                                    <a href="javascript:;">俱乐部首页</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">唯品币兑换</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-service">
+                        <span class="service-in">
+                            <a href="javascript:;">客户服务</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <p class="top-nav-list">
+                                <span>
+                                    <a href="javascript:;">联系客服</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">帮助中心</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">服务中心</a>
+                                </span>
+                                <span>
+                                    <a href="javascript:;">知识产权投诉</a>
+                                </span>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-phone">
+                        <span class="phone-in">
+                            <i class="ico-mob"></i>
+                            <a href="javascript:;">手机版</a>
+                        </span>
+                        <div class="top-nav-dis phone-infor fav-nav-drop">
+                            <i class="ico-arw-bodder"></i>
+                            <div class="tc">
+                                <a href="javascript:;">
+                                    <img src="https://b.appsimg.com/2016/06/17/863/1466134037230.jpg" alt="二维码"
+                                        width="161" height="161" class="qrcode_img">
+                                </a>
+                            </div>
+                            <p class="top-nav-list">
+                                <a href="javascript:;">随时逛 及时抢</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="wp-business">
+                        <span class="service-in">
+                            <a href="javascript:;">更多</a>
+                            <i class="ico-dis"></i>
+                        </span>
+                        <div class="top-nav-dis service-infor-more">
+                            <i class="ico-arw-bodder"></i>
+                            <h5 class="service-more-hd clearfix">合作专区</h5>
+                            <p class="top-nav-list clearfix">
+                                <a href="javascript:;">唯品卡</a>
+                            </p>
+                            <h5 class="service-more-hd clearfix service-more-hd2">关于我们</h5>
+                            <p class="top-nav-list clearfix service-more-p">
+                                <a href="javascript:;">Sell on vip</a>
+                                <a href="javascript:;//viva.vip.com/act/supportInvestment-pc?wapid=vivac_812">品牌招商</a>
+                                <a href="javascript:;">官方博客</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="head-log">
+            <div class="head-inner clearfix">
+                <div class="head-cart head-bag-car">
+                    <div class="tool">
+                        <a href="javascript:;">
+                            <span class="ico-bag"></span>
+                            <span class="mycartext-default">购物袋</span>
+                            <span class="mycarttext-countdown cart_countDowncart"></span>
+                            <span class="counti-cons-bg">
+                                <span id="skuCount">0</span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="c-search c-category-search">
+                    <div class="c-search-form">
+                        <input type="text" class="c-search-input search-input" placeholder="女靴" autocomplete="off"
+                            max-length="100">
+                        <a href="javascript:;" class="c-search-button search-button">
+                            <span class="c-search-icon"></span>
+                        </a>
+                    </div>
+                    <div class="search-hotwords-content">
+                        <ul class="c-search-hotwords-list search-hotwords-list">
+                            <li>
+                                <a href="javascript:;">女靴</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">护肤套装</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">女式大衣</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">女式羽绒服</a>
+                            </li>
+                            <li>
+                                <span class="hidden">|</span>
+                                <a href="javascript:;">波司登BOSIDENG</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="c-logo">
+                    <div class="header-logo-dop">
+                        <a href="javascript:;">
+                            <img src="https://b.appsimg.com/upload/momin/2020/06/16/82/1592278113502.png" alt="品牌特卖"
+                                height="100">
+                        </a>
+                    </div>
+                </div>
+                <div class="c-service header-vip">
+                    <a href="javascript:;" class="c-service-link"></a>
+                    <a href="javascript:;" class="c-service-link"></a>
+                    <a href="javascript:;" class="c-service-link"></a>
+                    <img class="c-service-img" src="https://b.appsimg.com/upload/momin/2020/04/16/150/1587017895494.jpg"
+                        width="304" height="100">
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="main-nav nav-cate-data">
+                <div class="head-inner">
+                    <ul class="main-nav-link clearfix">
+                        <li class="nav-category">
+                            <a href="javascript:;" class="main-nav-atag">
+                                <img src="https://b.appsimg.com/upload/momin/2018/09/10/150/1536548648745.png"
+                                    class="link-front-icon">
+                                商品分类
+                            </a>
+                            <div class="nav-category-data">
+                                <ul class="cate-menu">
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">女装/男装/内衣</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">女鞋/男鞋/箱包</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">护肤彩妆/个护</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">运动户外</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">家电数码</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">母婴童装</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">手表配饰</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">居家用品</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">唯品生活</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">唯品国际/唯品奢</span>
+                                    </li>
+                                    <li class="cate-menu-item">
+                                        <span class="menu-item-tit">医药健康</span>
+                                    </li>
+                                </ul>
+                                <div class="tate-pop">
+                                    <div class="nav-cate-data-loading"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="main-nav-atag nav_current">首页</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">3折疯抢</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">唯品快枪</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">唯品奥莱</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">品牌清仓</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">女装</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">母婴</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">家电</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">美妆</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="main-nav-atag">鞋包</a>
+                        </li>
+
+                        <li class="more-wrap">
+                            <a href="" class="main-nav-atag">更多
+                                <i class="vipFont iconfont">&#xe733;</i>
+                            </a>
+                            <div class="channel-item-group">
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;">男装</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;v" class="channel-more-itemlink">运动</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">家居</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">生活</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">配饰</a>
+                                    </a>
+                                </div>
+                                <div class="channel-item">
+                                    <a class="main-nav-atag">
+                                        <a href="javascript:;" class="channel-more-itemlink">扶贫</a>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="FW-wrap clearfix">
+        <div class="FW-product container">
+            <div class="M-pic">
+                <!-- 大图片 -->
+                <div class="pic-sliderwrap">
+                    <img class="slide-mid-pic"
+                        src="https://a.vpimg2.com/upload/merchandise/pdcvis/2020/12/18/8/ae02702f-2a2e-4977-8d08-335d398ca982_525x525_90.jpg">
+                    <!-- 小图片 -->
+                    <div class="pic-slider-items">
+                        <img
+                            src="https://a.vpimg2.com/upload/merchandise/pdcvis/2020/12/18/8/ae02702f-2a2e-4977-8d08-335d398ca982_525x525_90.jpg">
+                    </div>
+                    <!-- 遮挡层 -->
+                    <div class="zoomPup"></div>
+                </div>
+                <div class="pi-promise-box clearfix">
+                    <ul class="pi-promise-list">
+                        <img src="https://shop.vipstatic.com/img/detail/pc_xuanguan.png">
+                    </ul>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="pi-title-box">
+                    <div class="gobal-flag-box">
+                        <div class="gobal-flag-img">
+                            <img src="http://d.vpimg1.com/upcb/2016/05/27/172/34242988.jpg" alt="美国">
+                        </div>
+                        <p class="global-name" title="美国">美国</p>
+                        <a href="javascript:;" class="global-brand J_brandName" title="LA MER">LA MER</a>
+                    </div>
+                    <div class="pib-title">
+                        <span class="pib-ferme-tag">包税</span>
+                        <p class="pib-title-detail" title="海蓝之谜 精华面霜 60ml 保湿修护新旧版本随机发货">海蓝之谜 精华面霜 60ml 保湿修护新旧版本随机发货</p>
+                    </div>
+                </div>
+                <div class="clearfix">
+                    <img src="https://b.appsimg.com/upload/momin/2020/08/19/123/1597801521599.png" class="price_bgimg">
+                    <div class="spcecialPrice-box">
+                        <div class="sp-info">
+                            <i class="pbox-yen">¥</i>
+                            <span title="1889" class="sp-price">1889</span>
+                            <span class="pbox-market">¥<del class="marketPrice">2550</del></span>
+                            <span class="sp-discount">7.4折</span>
+                        </div>
+                        <div class="sp-time-progress">
+                            <img src="https://b.appsimg.com/upload/momin/2020/09/07/80/1599444363513_125x30_90.png"
+                                class="typeIcon">
+                            <div class="progress-bar-concent">累计热卖2.1万件</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 配送地址 -->
+                <div class="pi-attr-box">
+                    <form class="cartAdd-form" action="./cart.html">
+                        <div class="product_delivery">
+                            <dl class="g-delivery-address clearfix">
+                                <dt>配送</dt>
+                                <dd class="c-delivery-address-box">
+                                    <div class="delivery-address-box">
+                                        <div class="delivery-address-info">
+                                            <p class="delivery-address-tips">
+                                                <span>请选择省市区</span>
+                                            </p>
+                                            <i class="iconfont delivery-address-down">&#xe733;</i>
+                                        </div>
+                                    </div>
+                                </dd>
+                                <div class="pbox-details">价格组成</div>
+                            </dl>
+                            <dl class="g-delivery-address clearfix">
+                                <dt class="freight-name">运费</dt>
+                                <span class="freight_tips">订单满88元免运费</span>
+                                <dd class="freight-con">
+                                    <div class="loan-tips">
+                                        <a class="loan-tips-mars iconfont" href="javascript:">&#xe68c;</a>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="g-delivery-address clearfix">
+                                <dt class="freight-name">规格</dt>
+                                <li class="size-list-item" title="60ml">
+                                    <span class="size-list-item-name">60ml</span>
+                                    <span class="i-select"></span>
+                                    <span class="i-recommand"></span>
+                                    <span class="J-size-waitlist size-waitlist"></span>
+                                </li>
+                            </dl>
+                            <dl class="i-num clearfix">
+                                <dt class="freight-name">数量</dt>
+                                <dd class="ui-quantity">
+                                    <a href="javascript:;" class="num-reduce z-disable">-</a>
+                                    <em class="num-input">1</em>
+                                    <a href="javascript:;" class="num-add">+</a>
+                                </dd>
+                                <dd class="num-msg hidden" id="J-proStock-type" style="display: none;"></dd>
+                            </dl>
+                            <div class="i-button">
+                                <input type="submit" value="" class="ui-btn-large">
+                                </input>
+                                <span class="finalPrice_price">¥1889</span>
+                                <span class="finalPrice_subPriceTips">特卖价&nbsp;抢</span>
+                                <span class="button_arrow"></span>
+                            </div>
+                            <div class="other-form-box">
+                                <!-- 导流到小程序 start -->
+                                <div class="g-qr-code-title">
+                                    <img class="g-qr-code-phone"
+                                        src="https://shop.vipstatic.com/img/common/phone_color-hash-630f6d46.png">
+                                    <span class="g-qr-code-font">在小程序中查看此商品</span>
+                                </div>
+                                <!-- 客服 start -->
+                                <div class="supplier-service">
+                                    <dl class="c-supplier-service">
+                                        <dt class="c-supplier-service-title">客服</dt>
+                                        <dd class="c-supplier-service-item clearfix">
+                                            <div class="c-supplier-service-group">
+                                                <span class="c-supplier-service-icon-online"></span>
+                                                <a class="c-supplier-service-link" href="javascript:;">在线客服</a><span
+                                                    class="c-supplier-service-time">(09:00-22:00)</span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <!-- 客服 end -->
+                                <!-- 售后信息 start -->
+                                <dl class="other-service">
+                                    <dt class="other-name">服务</dt>
+                                    <dd class="other-box">
+                                        <div class="ht-txt J-ht-tip">
+                                            <div class="services-wrap">
+                                                <div class="iconType iconSuccess"></div>
+                                                <div class="services" title="本商品由唯品会安排发货，并提供售后服务。">唯品会发货及售后</div>
+                                            </div>
+
+                                            <div class="services-wrap">
+                                                <div class="iconType iconCaution"></div>
+                                                <div class="services"
+                                                    title="该商品属于特殊商品（包括黄金、裸钻、黄金首饰等贵重商品；文胸、塑身内衣、内裤、吊带、背心等贴身衣物；水产、果蔬、肉类、鲜花、盆栽等生鲜类商品；个性定制类商品；虚拟商品；报纸期刊；部分唯品国际跨境电商商品等），出于信息安全或者卫生等考虑，暂不支持7天无理由退货。">
+                                                    不支持7天无理由退货</div>
+                                            </div>
+
+                                            <div class="services-wrap">
+                                                <div class="iconType iconCaution"></div>
+                                                <div class="services"
+                                                    title="贵重物品、大件商品、贴身衣物、酒水生鲜食品、保健品药品、个人洗护用品用具、部分美妆类工具、定制商品、虚拟商品、教育图书音像制品等，出于信息安全或者卫生考虑，不支持换货。">
+                                                    不支持换货</div>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- 消费提示 start -->
+                            <dl class="other-consumerTips J_consumer_tips_other">
+                                <dt class="other-name">提示</dt>
+                                <dd class="other-box">
+                                    <div class="services-wrap">
+                                        <div class="iconType iconCaution"></div>
+                                        <div class="consumer-tips">
+                                            国家药监局提示您：法规规定的特殊用途化妆品，如祛斑美白、防晒等化妆品，产品标签上应标注“国妆特字”或者“国妆特进字”的批准文号。
+                                        </div>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="dc-img container">
+                <div class="dc-img-detail">
+                    <div class="img-6xx-bg">
+                        <img src="https://a.vpimg2.com/upload/merchandise/pdcimg/2020/06/12/51/365623111591954215182.jpg"
+                            class="img-detail-images">
+                    </div>
+
+                    <div class="img-6xx-bg">
+                        <img src="https://a.vpimg3.com/upload/merchandise/pdcimg/2020/06/12/118/1152041591954215595.jpg"
+                            class="img-detail-images">
+                    </div>
+
+                    <div class="img-6xx-bg">
+                        <img src="https://a.vpimg3.com/upload/merchandise/pdcimg/2020/06/12/115/543570291591954215642.jpg"
+                            class="img-detail-images">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <footer class="footer-inner" id="footer">
+            <ul class="footer-vip">
+                <li>
+                    <i class="footer-vip-v2-ico01">全球领先</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico02">正品货源</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico03">全球直采</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico04">自营仓储</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico05">入仓检验</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico06">正品保险</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico07">无忧退换</i>
+                </li>
+                <li>
+                    <i class="footer-vip-v2-ico08">万千信赖</i>
+                </li>
+            </ul>
+            <div class="footer-list">
+                <dl class="link-anim">
+                    <dt>服务保障</dt>
+                    <dd>
+                        <a href="javascript:;">正品保证</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;"></a>7天无理由放心退</a>
+                    </dd>
+                    <dd>
+                        <a href="//help.vip.com/commitment.php" class="J_common_help"></a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">7x15小时客户服务</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">7天无理由随心换</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>购物指南</dt>
+                    <dd>
+                        <a href="javascript:;">导购演示</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">订单操作</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">会员注册</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">账户管理</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">收货样品</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">会员等级</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>支付方式</dt>
+                    <dd>
+                        <a href="javascript:;">23家主流网银支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">支付宝、银联等支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">信用卡支付</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">零钱支付</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>配送方式</dt>
+                    <dd>
+                        <a href="javascript:;">配送范围及运费</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">验货与签收</a>
+                    </dd>
+                </dl>
+                <dl class="link-anim">
+                    <dt>售后服务</dt>
+                    <dd>
+                        <a href="javascript:;">退货政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">退货流程</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">退款方式和时效</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;">换货服务</a>
+                    </dd>
+                </dl>
+                <dl class="tc last">
+                    <dt>唯品会APP二维码</dt>
+                    <dd>
+                        <img class="lazy"
+                            src="https://a.vpimg4.com/upload/actpics/xuangou_daily/help/page_bottom_dl_n.png"
+                            width="100" height="100" alt="唯品会APP二维码">
+                    </dd>
+                    <dd>下载唯品会移动APP</dd>
+                </dl>
+            </div>
+            <div class="footer-infor">
+                <p class="footer-infor-link">
+                    <a href="javascript:;" title="关于我们">关于我们</a>|
+                    <a href="javascript:;" title="About us">About us</a>|
+                    <a href="javascript:;" title="Investor Relations">Investor Relations</a>|
+                    <a href="javascript:;" title="媒体报道">媒体报道</a>|
+                    <a href="javascript:;" title="品牌招商">品牌招商</a>|
+                    <a href="javascript:;" title="隐私条款">隐私条款</a>|
+                    <a href="javascript:;" title="唯品诚聘">唯品诚聘</a>|
+                    <a href="javascript:;" title="唯品卡">唯品卡</a>|
+                    <a href="javascript:;" title="联系我们">联系我们</a>|
+                    <a href="javascript:;" title="廉正举报">廉正举报</a>
+                </p>
+                <p class="footer-infor-txt">
+                    Copyright © 2008-2021 vip.com，All Rights Reserved&nbsp;&nbsp;使用本网站即表示接受
+                    <a href="javascript:;">唯品会用户协议</a>。版权所有
+                    <a href="javascript:;">广州唯品会电子商务有限公司</a>
+                    <br>
+                    <a href="javascript:;">
+                        <img src="https://a.vpimg4.com/upload/actpics/act/sp/police_icon.png" width="14" height="14"
+                            style="margin:2px 3px 0 0;">粤公网安备 44010302111111号
+                    </a>&nbsp;&nbsp;
+                    <a href="javascript:;">粤ICP备08114786号</a>
+                    <a href="javascript:;">增值业务经营许可证：粤B2-20170777 </a>
+                    <a href="javascript:;">网络文化经营许可证：粤网文〔2018〕5030-1743号</a>
+                    <br>
+                    <a href="javascript:;">经营主体证照</a>&nbsp;&nbsp;
+                    <a href="javascript:;">风险监测信息</a>&nbsp;&nbsp;
+                    <a href="javascript:;">互联网药品信息服务资格证书：（粤）-经营性-2018-0271</a>
+                    <a href="javascript:;"> 网络食品交易第三方平台备案凭证：粤B2-20170777 </a>
+                    <a href="javascript:;">医疗器械网络交易服务第三方平台备案凭证：（粤）网械平台备字[2019]第00001号</a>
+                </p>
+            </div>
+            <div class="footer-ft">
+                <p class="footer-pic">
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico01" title="银联特约商户"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico04" title="消费维权服务站"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico11" title="不良信息举报中心"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico06" title="网络警察报警平台"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico07" title="公安局网络警察支队"></i>
+                    </a>
+                    <a href="javascript:;" id="___szfw_logo___">
+                        <i class="footer-pic-ico09" title="诚信网站"></i>
+                    </a>
+                    <a href="javascript:;">
+                        <i class="footer-pic-ico10" title="可信网站"></i>
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
