@@ -674,7 +674,13 @@
     font-size: 16px;
     white-space: nowrap;
 }
+.main-nav-link li .main-nav-atag:hover {
+    color: #f10180;
+}
 
+.main-nav-link .nav-category .main-nav-atag:hover {
+    color: #fff;
+}
 .main-nav-link li .main-nav-atag.nav_current {
     cursor: default;
     font-weight: 700;

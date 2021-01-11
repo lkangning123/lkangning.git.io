@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>唯品会 详情页</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/iconfont.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/product.css">
 
     <script src="./lib/jquery1.12.4.min.js"></script>
-    <script src="./js/detail.js"></script>
+    <script src="./js/product.js"></script>
 </head>
 
 <body>
@@ -484,193 +483,38 @@
             </div>
         </nav>
     </header>
-    <div class="FW-wrap clearfix">
-        <div class="FW-product container">
-            <div class="M-pic">
-                <!-- 放大镜的大图片 -->
-                <div class="pic-sliderwrap">
-                    <img class="slide-mid-pic"
-                        src="https://a.vpimg2.com/upload/merchandise/pdcvis/2020/12/18/8/ae02702f-2a2e-4977-8d08-335d398ca982_525x525_90.jpg">
-                    <!-- 小图片 -->
-                    <div class="pic-slider-items">
-                        <img
-                            src="https://a.vpimg2.com/upload/merchandise/pdcvis/2020/12/18/8/ae02702f-2a2e-4977-8d08-335d398ca982_525x525_90.jpg">
+    <div class="product-content">
+        <div class="product-list container">
+            <!-- <div class="goods-item">
+                <a href="./detail.html">
+                    <div class="goods-item-top">
+                        <img class="goods-item_img" src="http://h2.appsimg.com/a.appsimg.com/upload/merchandise/pdcvis/2020/10/21/18/b0343270-73c7-4e56-a74e-1bcc3b531f5b_294x294_90.jpg">
                     </div>
-                    <!-- 遮挡层 -->
-                    <div class="zoomPup"></div>
-                </div>
-                <div class="pi-promise-box clearfix">
-                    <ul class="pi-promise-list">
-                        <img src="https://shop.vipstatic.com/img/detail/pc_xuanguan.png">
-                    </ul>
-                </div>
-            </div>
-            <div class="product-info">
-                <div class="pi-title-box">
-                    <div class="gobal-flag-box">
-                        <div class="gobal-flag-img">
-                            <img src="http://d.vpimg1.com/upcb/2016/05/27/172/34242988.jpg" alt="美国">
-                        </div>
-                        <p class="global-name" title="美国">美国</p>
-                        <a href="javascript:;" class="global-brand J_brandName" title="LA MER">LA MER</a>
-                    </div>
-                    <div class="pib-title">
-                        <span class="pib-ferme-tag">包税</span>
-                        <p class="pib-title-detail" title="海蓝之谜 精华面霜 60ml 保湿修护新旧版本随机发货">海蓝之谜 精华面霜 60ml 保湿修护新旧版本随机发货</p>
-                    </div>
-                </div>
-                <div class="clearfix">
-                    <img src="https://b.appsimg.com/upload/momin/2020/08/19/123/1597801521599.png" class="price_bgimg">
-                    <div class="spcecialPrice-box">
-                        <div class="sp-info">
-                            <span class="sp-price-zi">￥</span>
-                            <span title="1889" class="sp-price">1889</span>
-                            <span class="pbox-market"><del class="marketPrice">2550</del></span>
-                            <span class="sp-discount">7.4</span>
-                        </div>
-                        <div class="sp-time-progress">
-                            <img src="https://b.appsimg.com/upload/momin/2020/09/07/80/1599444363513_125x30_90.png"
-                                class="typeIcon">
-                            <div class="progress-bar-concent">累计热卖2.1万件</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- 配送地址 -->
-                <div class="pi-attr-box">
-                    <form class="cartAdd-form" action="./cart.html">
-                        <div class="product_delivery">
-                            <dl class="g-delivery-address clearfix">
-                                <dt>配送</dt>
-                                <dd class="c-delivery-address-box">
-                                    <div class="delivery-address-box">
-                                        <div class="delivery-address-info">
-                                            <p class="delivery-address-tips">
-                                                <span>请选择省市区</span>
-                                            </p>
-                                            <i class="iconfont delivery-address-down">&#xe733;</i>
-                                        </div>
-                                    </div>
-                                </dd>
-                                <div class="pbox-details">价格组成</div>
-                            </dl>
-                            <dl class="g-delivery-address clearfix">
-                                <dt class="freight-name">运费</dt>
-                                <span class="freight_tips">订单满88元免运费</span>
-                                <dd class="freight-con">
-                                    <div class="loan-tips">
-                                        <a class="loan-tips-mars iconfont" href="javascript:">&#xe68c;</a>
-                                    </div>
-                                </dd>
-                            </dl>
-                            <dl class="g-delivery-address clearfix">
-                                <dt class="freight-name">规格</dt>
-                                <li class="size-list-item" title="60ml">
-                                    <span class="size-list-item-name">60ml</span>
-                                    <span class="i-select"></span>
-                                    <span class="i-recommand"></span>
-                                    <span class="J-size-waitlist size-waitlist"></span>
-                                </li>
-                            </dl>
-                            <dl class="i-num clearfix">
-                                <dt class="freight-name">数量</dt>
-                                <dd class="ui-quantity">
-                                    <a href="javascript:;" class="num-reduce z-disable">-</a>
-                                    <em class="num-input">1</em>
-                                    <a href="javascript:;" class="num-add">+</a>
-                                </dd>
-                            </dl>
-                            <div class="i-button">
-                                <div class="ui-btn-large">
-                                    <span class="finalPrice_price-zi">￥</span>
-                                    <span class="finalPrice_price">1889</span>
-                                    <span class="finalPrice_subPriceTips">特卖价&nbsp;抢</span>
-                                    <span class="button_arrow"></span>
+                    <div class="goods-item-bottom">
+                        <div class="goods-item_price">
+                            <div class="goods-item_main-price">
+                                <div class="goods-item_price-label">
+                                    <span class="goods-item_price-label-text">特卖价</span>
                                 </div>
+                                <div class="goods-item_sale-price"><span>¥</span>188</div>
+                                <div class="goods-item_market-price"><span>¥</span>415
+                                </div>
+                                <div class="goods-item_discount">4.5折</div>
                             </div>
-                            <div class="other-form-box">
-                                <!-- 导流到小程序 start -->
-                                <div class="g-qr-code-title">
-                                    <img class="g-qr-code-phone"
-                                        src="https://shop.vipstatic.com/img/common/phone_color-hash-630f6d46.png">
-                                    <span class="g-qr-code-font">在小程序中查看此商品</span>
-                                </div>
-                                <!-- 客服 start -->
-                                <div class="supplier-service">
-                                    <dl class="c-supplier-service">
-                                        <dt class="c-supplier-service-title">客服</dt>
-                                        <dd class="c-supplier-service-item clearfix">
-                                            <div class="c-supplier-service-group">
-                                                <span class="c-supplier-service-icon-online"></span>
-                                                <a class="c-supplier-service-link" href="javascript:;">在线客服</a><span
-                                                    class="c-supplier-service-time">(09:00-22:00)</span>
-                                            </div>
-                                        </dd>
-                                    </dl>
-                                </div>
-                                <!-- 客服 end -->
-                                <!-- 售后信息 start -->
-                                <dl class="other-service">
-                                    <dt class="other-name">服务</dt>
-                                    <dd class="other-box">
-                                        <div class="ht-txt J-ht-tip">
-                                            <div class="services-wrap">
-                                                <div class="iconType iconSuccess"></div>
-                                                <div class="services" title="本商品由唯品会安排发货，并提供售后服务。">唯品会发货及售后</div>
-                                            </div>
-
-                                            <div class="services-wrap">
-                                                <div class="iconType iconCaution"></div>
-                                                <div class="services"
-                                                    title="该商品属于特殊商品（包括黄金、裸钻、黄金首饰等贵重商品；文胸、塑身内衣、内裤、吊带、背心等贴身衣物；水产、果蔬、肉类、鲜花、盆栽等生鲜类商品；个性定制类商品；虚拟商品；报纸期刊；部分唯品国际跨境电商商品等），出于信息安全或者卫生等考虑，暂不支持7天无理由退货。">
-                                                    不支持7天无理由退货</div>
-                                            </div>
-
-                                            <div class="services-wrap">
-                                                <div class="iconType iconCaution"></div>
-                                                <div class="services"
-                                                    title="贵重物品、大件商品、贴身衣物、酒水生鲜食品、保健品药品、个人洗护用品用具、部分美妆类工具、定制商品、虚拟商品、教育图书音像制品等，出于信息安全或者卫生考虑，不支持换货。">
-                                                    不支持换货</div>
-                                            </div>
-                                        </div>
-                                    </dd>
-                                </dl>
-                            </div>
-                            <!-- 消费提示 start -->
-                            <dl class="other-consumerTips J_consumer_tips_other">
-                                <dt class="other-name">提示</dt>
-                                <dd class="other-box">
-                                    <div class="services-wrap">
-                                        <div class="iconType iconCaution"></div>
-                                        <div class="consumer-tips">
-                                            国家药监局提示您：法规规定的特殊用途化妆品，如祛斑美白、防晒等化妆品，产品标签上应标注“国妆特字”或者“国妆特进字”的批准文号。
-                                        </div>
-                                    </div>
-                                </dd>
-                            </dl>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <div class="dc-img container">
-                <div class="dc-img-detail">
-                    <div class="img-6xx-bg">
-                        <img src="https://a.vpimg2.com/upload/merchandise/pdcimg/2020/06/12/51/365623111591954215182.jpg"
-                            class="img-detail-images">
+                        <div class="goods-item_name">【新年礼物】安娜苏 幸运精灵女士淡香水30/75ml</div>
+                        <ul class="goods-item_pms-tag-wrap">
+                            <li class="goods-item_pms-tag">
+                                <img class="goods-item_pms-tag-flag"
+                                    src="http://h2.appsimg.com/a.appsimg.com/upcb/2019/07/22/79/1563800953710.png"
+                                    alt="">
+                                <span>唯品国际</span>
+                            </li>
+                        </ul>
                     </div>
-
-                    <div class="img-6xx-bg">
-                        <img src="https://a.vpimg3.com/upload/merchandise/pdcimg/2020/06/12/118/1152041591954215595.jpg"
-                            class="img-detail-images">
-                    </div>
-
-                    <div class="img-6xx-bg">
-                        <img src="https://a.vpimg3.com/upload/merchandise/pdcimg/2020/06/12/115/543570291591954215642.jpg"
-                            class="img-detail-images">
-                    </div>
-                </div>
-            </div>
+                </a>
+            </div> -->
         </div>
-    </div>
     </div>
     <div class="footer">
         <footer class="footer-inner" id="footer">

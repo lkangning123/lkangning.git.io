@@ -1,10 +1,10 @@
 $(function () {
     // 点击lightart-wrap-box，brand-item跳转到详情页
     $('.lightart-wrap-box').click(function () {
-        window.open('./detail.html')
+        window.open('./product.html')
     });
     $('.brand-item').click(function () {
-        window.open('./detail.html')
+        window.open('./product.html')
     });
     // 轮播图
     var mySwiper = new Swiper('.swiper-container', {

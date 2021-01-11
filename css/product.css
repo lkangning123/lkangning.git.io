@@ -1,0 +1,123 @@
+.product-content {
+    margin: 50px 0;
+}
+
+.goods-item {
+    width: 228px;
+    border: solid 1px #e7e7e7;
+    overflow: visible;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.goods-item-top {
+    width: 100%;
+}
+
+.goods-item-top .goods-item_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.goods-item-bottom {
+    width: 235px;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 120px;
+}
+
+.goods-item_price {
+    padding-bottom: 12px;
+}
+
+.goods-item_main-price {
+    box-sizing: border-box;
+    height: 30px;
+    padding-top: 12px;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.goods-item_main-price>div {
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.goods-item_price-label {
+    background-image: linear-gradient(270deg, #e456ff 0, #ff31a3 100%);
+    background-color: #ff38c0;
+    border-radius: 15px;
+    color: #fff;
+    padding: 0 4px;
+    margin-right: 4px;
+    height: 18px;
+    font-size: 0;
+}
+
+.goods-item_price-label>img, .goods-item_price-label>span {
+    display: inline-block;
+}
+
+.goods-item_price-label-text {
+    font-size: 12px;
+}
+
+.goods-item_sale-price-zi,.goods-item_sale-price {
+    color: #333;
+    font-size: 23px;
+    line-height: 18px;
+    font-weight: 700;
+}
+
+.goods-item_market-price {
+    text-decoration: line-through;
+}
+
+.goods-item_discount, .goods-item_market-price {
+    color: #999;
+    margin-left: 4px;
+    font-size: 12px;
+}
+
+.goods-item_name {
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.goods-item_pms-tag-wrap {
+    position: absolute;
+    bottom: 1px;
+    left: 12px;
+}
+
+.goods-item_pms-tag {
+    height: 20px;
+    width: 76px;
+    box-sizing: border-box;
+    border: 1px solid #6c5eab;
+    color: #6c5eab;
+    line-height: 16px;
+    border-radius: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.goods-item_pms-tag img {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 0 1px 2px;
+}
+
+.goods-item_pms-tag span {
+    font-size: 12px;
+    padding-top: 1px;
+}
